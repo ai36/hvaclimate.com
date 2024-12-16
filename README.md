@@ -13,4 +13,4 @@ Destination folder: **./dist/**
 
 ## Addition information
 
-The folder **./src/img/** has an source images. They not put to git-repository.
+The **./src/img/** folder contains the original images. They are not placed in the git repository.

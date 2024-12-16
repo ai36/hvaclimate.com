@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертирование выгрузки контактов клиентов из Jobber в формат для Google Ads</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .file-control {
+            width: 100%;
+            padding: 1em;
+        }
+
+        .result {
+            border: 1px solid;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: currentcolor;
+            border-bottom: none;
+            white-space: nowrap;
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="file-control">
+        <input type="file" id="file">
+        <button>Чтение файла</button>
+    </div>
+    <script>
+        function formatPhoneNumber(phoneNumber) {
+            // Удаляем все символы, кроме цифр и символа +
+            let cleaned = phoneNumber.replace(/[^\d+]/g, '');
+            switch (cleaned.length) {
+                case 7:
+                    cleaned = '1503' + cleaned;
+                    break;
+                case 10:
+                    cleaned = '1' + cleaned;
+                    break;
+            }
+            return cleaned;
+        }
+
+        function processLine(line) {
+            // Разделяем строку по запятой
+            let elements = line.split(',');
+
+            let result = [];
+            result.push(elements[7]);
+            result.push(elements[4]);
+            result.push(elements[5]);
+            result.push('us');
+            result.push(elements[26]);
+            result.push(elements[7]);
+            result.push(elements[26]);
+            result.push(formatPhoneNumber(String(elements[27])));
+
+            // Объединяем обратно в строку
+            return result.join(',');
+        }
+
+        function processString(str) {
+            // Разделяем строку по символу перевода строки
+            let lines = str.split('\n');
+
+            // Обрабатываем каждую строку через функцию processLine
+            let processedLines = lines.map(line => processLine(line));
+
+            // Объединяем обратно в одну строку с символами перевода строки
+            return processedLines.join('\n');
+        }
+
+        function splitEmailsAndDuplicateLines(str) {
+            // Найдем все подстроки в кавычках
+            let matches = str.match(/"([^"]*)"/g);
+
+            // Создадим массив для хранения всех новых строк
+            let newLines = [];
+
+            // Пройдемся по каждой подстроке
+            if (matches) {
+                matches.forEach((match) => {
+                    // Уберем кавычки
+                    let emailsString = match.slice(1, -1);
+                    // Разделим строку на отдельные e-mail адреса
+                    let emails = emailsString.split(';');
+
+                    // Создадим новые строки, заменив подстроку с e-mail адресами на каждый отдельный e-mail
+                    emails.forEach((email) => {
+                        // Заменим подстроку в исходной строке
+                        let newStr = str.replace(match, `"${email}"`);
+                        // Добавим новую строку в массив
+                        newLines.push(newStr);
+                    });
+                });
+            } else {
+                // Если подстрок в кавычках нет, просто добавим исходную строку в массив
+                newLines.push(str);
+            }
+
+            return newLines;
+        }
+
+        function replaceCommasInQuotes(str) {
+            return str.replace(/"([^"]*)"/g, (match, p1) => {
+                return ('"' + p1.replace(/,/g, ';') + '"').replaceAll('; ', ';');
+            });
+        }
+
+        function stringDestruct(str) {
+            let strArray = [str.split('",', 1).toString(), str.split('",').slice(1).join('",')];
+            let strResult = strArray[1].replaceAll('""', '');
+            strResult = replaceCommasInQuotes(strResult);
+            return strResult;
+        }
+
+        document.querySelector('button').addEventListener('click', function () {
+            let file = document.getElementById('file').files[0];
+            let reader = new FileReader();
+            reader.readAsText(file);
+            reader.onload = function () {
+                let res = reader.result;
+                let array = res.split('\n');
+                for (i = 0; i < array.length; i++) {
+                    let block = document.createElement('div');
+                    block.classList.add('result');
+                    document.body.appendChild(block);
+                    let resultString = splitEmailsAndDuplicateLines(stringDestruct(array[i])).join('\n').replaceAll('"', '');
+                    block.innerText = processString(resultString).replaceAll(',true', '').toLowerCase();
+                }
+            }
+            reader.onerror = function () {
+                console.log(reader.error);
+            }
+        })
+    </script>
+</body>
+
+</html>

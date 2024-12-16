@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Electric furnace tune up in Portland & Vancouver - HVA Climate",
+"desc": "Professional electric furnace tune-up services to enhance efficiency and reliability. Keep your home warm with expert maintenance.",
+"url": "//www.hvaclimate.com/electric-furnace-tune-up.html",
+"canonical": "https://www.hvaclimate.com/electric-furnace-tune-up.html",
+"image": "//www.hvaclimate.com/images/electric-furnace-tune-up.jpg",
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+        @@include('html/firstscreen.html', {
+        "fctitle": "Electric furnace tune up&nbsp;—<br>warmth and efficiency!",
+        "fcdesc": "Ensure your electric furnace operates at peak performance<br>with our <em>tune-up services</em>",
+        "fcimgpath": "images/electric-furnace-tune-up",
+        "fcimgalt": "Technician performing a tune-up on an electric furnace",
+        "fcbutton": "Schedule Tune-Up",
+        "fccssclass": "fc-electric-furnace-tune-up"
+        })
+
+        @@include('html/trustedbar.html')
+
+        @@include('html/breadcrumbs3.html', {
+        "title0":"HVA Climate Control",
+        "link0":"//www.hvaclimate.com",
+        "title1":"Heating",
+        "link1":"//www.hvaclimate.com/heating.html",
+        "title2":"Electric furnace tune up",
+        "link2":"//www.hvaclimate.com/electric-furnace-tune-up.html",
+        })
+
+        <div class="full-width full-width-ib">
+            <div class="container">
+                <h2>Expert Electric Furnace Tune-Up Services</h2>
+                <div class="infobox">
+                    <nav>
+                        <ul class="ib-menu">
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/electric-furnace-installation.html">Electric furnace installation</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/electric-furnace-replacement.html">Electric furnace replacement</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/electric-furnace-repair.html">Electric furnace repair</a></li>
+                            <li><span class="ibm-item" data-href="//www.hvaclimate.com/electric-furnace-tune-up.html">Electric furnace tune up</span></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/electric-furnace-maintenance.html">Electric furnace maintenance</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/electric-furnace-upgrade.html">Electric furnace upgrade</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/emergency-electric-furnace-repair.html">Emergency electric furnace repair</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="ib-info">
+                        <h3>Why Regular Electric Furnace Tune-Ups Are Essential</h3>
+                        <p>Maintaining your electric furnace with regular tune-ups is crucial for ensuring consistent warmth and energy efficiency in your home. Over time, components can wear out or accumulate dust, leading to reduced performance or unexpected breakdowns. At HVA Climate Control, we offer professional electric furnace tune-up services in Portland and Vancouver to keep your heating system running smoothly.</p>
+
+                        <h3>Benefits of Our Tune-Up Services</h3>
+                        <p>Regular tune-ups provide numerous advantages:</p>
+                        <ul>
+                            <li><strong>Improved Efficiency:</strong> Optimizes your furnace's performance, reducing energy consumption and lowering utility bills.</li>
+                            <li><strong>Extended Lifespan:</strong> Regular maintenance can prolong the life of your furnace by addressing minor issues early.</li>
+                            <li><strong>Enhanced Safety:</strong> Ensures all electrical components are functioning safely to prevent hazards.</li>
+                            <li><strong>Consistent Comfort:</strong> Maintains reliable heating throughout your home during colder months.</li>
+                        </ul>
+
+                        <h3>Our Comprehensive Tune-Up Process</h3>
+                        <p>Our skilled technicians perform a thorough tune-up that includes:</p>
+                        <ul>
+                            <li>Inspecting and tightening electrical connections.</li>
+                            <li>Cleaning heating elements and components.</li>
+                            <li>Lubricating moving parts to reduce friction.</li>
+                            <li>Testing thermostat calibration and system controls.</li>
+                            <li>Checking air filters and replacing if necessary.</li>
+                        </ul>
+
+                        <p>Don't wait for a breakdown—schedule your electric furnace tune-up today to ensure a warm and comfortable home.</p>
+
+                        @@include("html/ctaintext.html", {
+                        "buttontext": "Schedule Tune-Up",
+                        })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/howitworks.html')
+
+        <div class="full-width full-width-faq">
+            <div class="container">
+                <div class="faq">
+                    <h2>FAQ and troubleshooting</h2>
+
+                    @@loop("html/faq/_html-template.html", [
+                    {"question": "How often should I schedule an electric furnace tune-up?", "answer": "It's recommended to have your electric furnace tuned up at least once a year, preferably before the winter season begins. Regular tune-ups ensure your system operates efficiently and helps prevent unexpected breakdowns during peak usage."},
+                    {"question": "What does an electric furnace tune-up include?", "answer": "Our comprehensive tune-up includes inspecting and cleaning heating elements, checking and tightening electrical connections, lubricating moving parts, testing the thermostat and controls, and replacing or cleaning air filters. This thorough service optimizes performance and safety."},
+                    {"question": "Can a tune-up reduce my energy bills?", "answer": "Yes, a well-maintained furnace operates more efficiently, which can lead to lower energy consumption and reduced utility bills. Regular tune-ups help identify and correct issues that may be causing your system to work harder than necessary."},
+                    {"question": "What are signs my furnace needs a tune-up?", "answer": "Common signs include uneven heating, unusual noises, frequent cycling on and off, higher energy bills, and reduced airflow. If you notice any of these issues, it's time to schedule a tune-up to address potential problems."},
+                    {"question": "Do you offer maintenance plans?", "answer": "Absolutely. We offer customized maintenance plans that include regular tune-ups and priority service. Our plans are designed to keep your heating system running efficiently while providing peace of mind throughout the year."}
+                    ])
+
+                    <script type="application/ld+json">
+                        {
+                          "@context": "https://schema.org",
+                          "@type": "FAQPage",
+                          "mainEntity": [@@loop("html/faq/_jsonld-template.html", [
+                          {"question": "How often should I schedule an electric furnace tune-up?", "answer": "It's recommended to have your electric furnace tuned up at least once a year, preferably before the winter season begins. Regular tune-ups ensure your system operates efficiently and helps prevent unexpected breakdowns during peak usage."},
+                          {"question": "What does an electric furnace tune-up include?", "answer": "Our comprehensive tune-up includes inspecting and cleaning heating elements, checking and tightening electrical connections, lubricating moving parts, testing the thermostat and controls, and replacing or cleaning air filters. This thorough service optimizes performance and safety."},
+                          {"question": "Can a tune-up reduce my energy bills?", "answer": "Yes, a well-maintained furnace operates more efficiently, which can lead to lower energy consumption and reduced utility bills. Regular tune-ups help identify and correct issues that may be causing your system to work harder than necessary."},
+                          {"question": "What are signs my furnace needs a tune-up?", "answer": "Common signs include uneven heating, unusual noises, frequent cycling on and off, higher energy bills, and reduced airflow. If you notice any of these issues, it's time to schedule a tune-up to address potential problems."},
+                          {"question": "Do you offer maintenance plans?", "answer": "Absolutely. We offer customized maintenance plans that include regular tune-ups and priority service. Our plans are designed to keep your heating system running efficiently while providing peace of mind throughout the year."}
+                          ])]
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        @@include('html/reviews.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Gas furnace tune-up in Portland | Vancouver - HVA Climate Control",
+"desc": "Professional gas furnace tune-up in Portland & Vancouver. Enhance efficiency and reliability with our expert services - HVA Climate Control",
+"url": "//www.hvaclimate.com/gas-furnace-tune-up.html",
+"canonical": "https://www.hvaclimate.com/gas-furnace-tune-up.html",
+"image": "//www.hvaclimate.com/images/gas-furnace-tune-up.jpg",
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+        @@include('html/firstscreen.html', {
+        "fctitle": "Gas furnace tune-up&nbsp;—<br>keep your home warm!",
+        "fcdesc": "Maintain your gas furnace for optimal performance<br>with our professional <em>tune-up services</em>",
+        "fcimgpath": "images/gas-furnace-tune-up",
+        "fcimgalt": "Technician performing a gas furnace tune-up",
+        "fcbutton": "Schedule Tune-Up",
+        "fccssclass": "fc-gas-furnace-tune-up"
+        })
+
+        @@include('html/trustedbar.html')
+
+        @@include('html/breadcrumbs3.html', {
+        "title0":"HVA Climate Control",
+        "link0":"//www.hvaclimate.com",
+        "title1":"Heating",
+        "link1":"//www.hvaclimate.com/heating.html",
+        "title2":"Gas furnace tune-up",
+        "link2":"//www.hvaclimate.com/gas-furnace-tune-up.html",
+        })
+
+        <div class="full-width full-width-ib">
+            <div class="container">
+                <h2>Professional Gas Furnace Tune-Up Services</h2>
+                <div class="infobox">
+                    <nav>
+                        <ul class="ib-menu">
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-installation.html">Gas furnace installation</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-replace.html">Gas furnace replacement</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-repair.html">Gas furnace repair</a></li>
+                            <li><span class="ibm-item" data-href="//www.hvaclimate.com/gas-furnace-tune-up.html">Gas furnace tune-up</span></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-upgrade.html">Gas furnace upgrade</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-maintenance.html">Gas furnace maintenance</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/emergency-gas-furnace-repair.html">Emergency gas furnace repair</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="ib-info">
+                        <h3>Why Regular Gas Furnace Tune-Up is Essential</h3>
+                        <p>Maintaining your gas furnace with regular tune-ups is crucial for ensuring efficient heating and prolonging the life of your system. A well-maintained furnace operates more efficiently, reducing energy costs and preventing unexpected breakdowns during the cold season. At HVA Climate Control, we offer expert gas furnace tune-up services in Portland and Vancouver to keep your home warm and comfortable.</p>
+
+                        <h3>Benefits of Professional Furnace Maintenance</h3>
+                        <ul>
+                            <li><strong>Improved Efficiency:</strong> Regular tune-ups optimize your furnace's performance, lowering energy consumption.</li>
+                            <li><strong>Extended Lifespan:</strong> Preventative maintenance can extend the life of your furnace by addressing minor issues before they escalate.</li>
+                            <li><strong>Enhanced Safety:</strong> We check for gas leaks and other safety hazards to protect your home and family.</li>
+                            <li><strong>Better Air Quality:</strong> Cleaning and replacing filters improve indoor air quality by reducing dust and allergens.</li>
+                        </ul>
+
+                        <h3>Our Comprehensive Tune-Up Process</h3>
+                        <p>Our skilled technicians perform a thorough inspection and maintenance of your gas furnace, including:</p>
+                        <ul>
+                            <li>Checking and cleaning burners and heat exchangers.</li>
+                            <li>Inspecting the ignition system and safety controls.</li>
+                            <li>Lubricating moving parts to reduce friction.</li>
+                            <li>Testing thermostat calibration and system controls.</li>
+                            <li>Replacing or cleaning air filters for optimal airflow.</li>
+                        </ul>
+
+                        <p>Schedule your gas furnace tune-up today to ensure your heating system is ready for the winter months.</p>
+
+                        @@include("html/ctaintext.html", {
+                        "buttontext": "Schedule Tune-Up",
+                        })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/howitworks.html')
+
+        <div class="full-width full-width-faq">
+            <div class="container">
+                <div class="faq">
+                    <h2>FAQ and troubleshooting</h2>
+
+                    @@loop("html/faq/_html-template.html", [
+                    {"question": "How often should I schedule a gas furnace tune-up?", "answer": "It's recommended to schedule a gas furnace tune-up once a year, preferably in the fall before the heating season begins, to ensure optimal performance and efficiency."},
+                    {"question": "What does a furnace tune-up include?", "answer": "A furnace tune-up includes a thorough inspection, cleaning, and adjustment of your furnace components to enhance efficiency, safety, and reliability."},
+                    {"question": "Can a tune-up lower my energy bills?", "answer": "Yes, regular tune-ups improve your furnace's efficiency, which can lead to lower energy consumption and reduced heating costs."},
+                    {"question": "How long does a furnace tune-up take?", "answer": "A typical furnace tune-up takes about 1 to 2 hours, depending on the system's condition and any additional maintenance required."},
+                    {"question": "What are the signs my furnace needs maintenance?", "answer": "Signs include uneven heating, unusual noises, frequent cycling, higher energy bills, and poor air quality. If you notice any of these, it's time for a tune-up."}
+                    ])
+
+                    <script type="application/ld+json">
+                        {
+                          "@context": "https://schema.org",
+                          "@type": "FAQPage",
+                          "mainEntity": [@@loop("html/faq/_jsonld-template.html", [
+                          {"question": "How often should I schedule a gas furnace tune-up?", "answer": "It's recommended to schedule a gas furnace tune-up once a year, preferably in the fall before the heating season begins, to ensure optimal performance and efficiency."},
+                          {"question": "What does a furnace tune-up include?", "answer": "A furnace tune-up includes a thorough inspection, cleaning, and adjustment of your furnace components to enhance efficiency, safety, and reliability."},
+                          {"question": "Can a tune-up lower my energy bills?", "answer": "Yes, regular tune-ups improve your furnace's efficiency, which can lead to lower energy consumption and reduced heating costs."},
+                          {"question": "How long does a furnace tune-up take?", "answer": "A typical furnace tune-up takes about 1 to 2 hours, depending on the system's condition and any additional maintenance required."},
+                          {"question": "What are the signs my furnace needs maintenance?", "answer": "Signs include uneven heating, unusual noises, frequent cycling, higher energy bills, and poor air quality. If you notice any of these, it's time for a tune-up."}
+                          ])]
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        @@include('html/reviews.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+</body>
+
+</html>

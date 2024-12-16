@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Gas furnace repair Vancouver | Portland - HVA Climate Control",
+"desc": "Expert gas furnace repair services in Vancouver, WA, ensuring efficient, safe heating system operation. Fast, reliable fixes with comprehensive maintenance - HVA Climate Control",
+"url": "//www.hvaclimate.com/gas-furnace-repair.html",
+"canonical": "https://www.hvaclimate.com/gas-furnace-repair.html",
+"image": "//www.hvaclimate.com/images/gas-furnace-repair.jpg"
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+        @@include('html/firstscreen.html', {
+        "fctitle": "Gas furnace repair&nbsp;—<br>fast, safe, and effective!",
+        "fcdesc": "Bring warmth and comfort back to your home<br>with our expert <em>gas furnace repair</em>",
+        "fcimgpath": "images/gas-furnace-repair",
+        "fcimgalt": "Specialist conducts repair of a gas furnace",
+        "fcbutton": "Get warm",
+        "fccssclass": "fc-gas-furnace-repair",
+        })
+
+        @@include('html/trustedbar.html')
+
+        @@include('html/breadcrumbs3.html', {
+        "title0":"HVA Climate Control",
+        "link0":"//www.hvaclimate.com",
+        "title1":"Heating",
+        "link1":"//www.hvaclimate.com/heating.html",
+        "title2":"Gas furnace repair",
+        "link2":"//www.hvaclimate.com/gas-furnace-repair.html",
+        })
+
+        <div class="full-width full-width-ib">
+            <div class="container">
+                <h2>Expert gas furnace repair services</h2>
+                <div class="infobox">
+                    <nav>
+                        <ul class="ib-menu">
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-installation.html">Gas furnace installation</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-replace.html">Gas furnace replace</a></li>
+                            <li><span class="ibm-item" data-href="//www.hvaclimate.com/gas-furnace-repair.html">Gas furnace repair</span></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-tune-up.html">Gas furnace tune-up</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-upgrade.html">Gas furnace upgrade</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-maintenance.html">Gas furnace maintenance</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/emergency-gas-furnace-repair.html">Emergency gas furnace repair</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="ib-info">
+                        <h3>Professional Gas Furnace Repair</h3>
+                        <p>Don't let a broken furnace leave you cold this winter. Our skilled technicians in Portland and Vancouver are ready to bring the heat back to your home with fast, effective gas furnace repairs.</p>
+                        
+                        <h3>Signs You Need Furnace Repair</h3>
+                        <ul>
+                          <li><strong>Strange noises:</strong> Banging, whistling, or grinding sounds can indicate mechanical issues.</li>
+                          <li><strong>Weak heat or no heat:</strong> If your furnace isn't heating adequately, it may need service.</li>
+                          <li><strong>Frequent cycling:</strong> Short cycling can be a symptom of a faulty thermostat or a clogged filter.</li>
+                        </ul>
+                        
+                        <h3>Our Repair Services Include</h3>
+                        <ul>
+                          <li>Thorough inspection and diagnosis of your furnace's problem.</li>
+                          <li><strong>Quick repairs:</strong> We carry most parts in our vans for on-the-spot repairs.</li>
+                          <li>Detailed system testing to ensure reliable operation after repairs.</li>
+                        </ul>
+                        
+                        @@include("html/ctaintext.html", {
+                        "buttontext": "Repair my furnace",
+                        })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/howitworks.html')
+
+        <div class="full-width full-width-faq">
+            <div class="container">
+                <div class="faq">
+                    <h2>FAQ and troubleshooting</h2>
+
+                    @@loop("html/faq/_html-template.html", [
+                    {"question": "How fast can you repair my furnace?", "answer": "We strive to offer same-day service whenever possible, especially in emergency situations."},
+                    {"question": "What does a typical repair cost?", "answer": "Costs vary depending on the issue, but we provide a transparent quote before any work begins."},
+                    {"question": "Are your technicians certified?", "answer": "Yes, all of our technicians are fully certified and have extensive experience with gas furnace repairs."},
+                    {"question": "Do you offer any warranties?", "answer": "We offer a warranty on all repairs, covering both parts and labor for your peace of mind."},
+                    {"question": "Can you service all brands of gas furnaces?", "answer": "Yes, our technicians are trained to repair all major brands of gas furnaces."}
+                    ])
+
+                    <script type="application/ld+json">
+                        {
+                          "@context": "https://schema.org",
+                          "@type": "FAQPage",
+                          "mainEntity": [@@loop("html/faq/_jsonld-template.html", [
+                          {"question": "How fast can you repair my furnace?", "answer": "We strive to offer same-day service whenever possible, especially in emergency situations."},
+                          {"question": "What does a typical repair cost?", "answer": "Costs vary depending on the issue, but we provide a transparent quote before any work begins."},
+                          {"question": "Are your technicians certified?", "answer": "Yes, all of our technicians are fully certified and have extensive experience with gas furnace repairs."},
+                          {"question": "Do you offer any warranties?", "answer": "We offer a warranty on all repairs, covering both parts and labor for your peace of mind."},
+                          {"question": "Can you service all brands of gas furnaces?", "answer": "Yes, our technicians are trained to repair all major brands of gas furnaces."}
+                          ])]
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        @@include('html/reviews.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+</body>
+
+</html>

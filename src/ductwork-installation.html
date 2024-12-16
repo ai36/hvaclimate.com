@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Ductwork Installation Services - HVA Climate Control",
+"desc": "Expert ductwork installation in Portland & Vancouver. Improve HVAC efficiency with professional service - HVA Climate Control",
+"url": "//www.hvaclimate.com/ductwork-installation.html",
+"canonical": "https://www.hvaclimate.com/ductwork-installation.html",
+"image": "//www.hvaclimate.com/images/ductwork-installation.jpg"
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+        @@include('html/firstscreen.html', {
+        "fctitle": "Professional Ductwork<br>Installation Services",
+        "fcdesc": "Ensure optimal air flow and HVAC efficiency<br>with our expert <em>ductwork installation services</em>",
+        "fcimgpath": "images/ductwork-installation",
+        "fcimgalt": "Technician installing ductwork in a residential property",
+        "fcbutton": "Install Now",
+        "fccssclass": "fc-ductwork-installation"
+        })
+
+        @@include('html/trustedbar.html')
+
+        @@include('html/breadcrumbs3.html', {
+        "title0":"HVA Climate Control",
+        "link0":"//www.hvaclimate.com",
+        "title1":"Ventilation",
+        "link1":"//www.hvaclimate.com/ventilation.html",
+        "title2":"Ductwork installation",
+        "link2":"//www.hvaclimate.com/ductwork-installation.html",
+        })
+
+        <div class="full-width full-width-ib">
+            <div class="container">
+                <h2>Enhance Your Home’s Air Quality</h2>
+                <div class="infobox">
+                    <nav>
+                        <ul class="ib-menu">
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/vent-cleaning.html">Vent cleaning</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/dryer-vent-cleaning.html">Dryer vent cleaning</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/ductwork-replacement.html">Ductwork replacement</a></li>
+                            <li><span class="ibm-item" data-href="//www.hvaclimate.com/ductwork-installation.html">Ductwork installation</span></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/ductwork-repair.html">Ductwork repair</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/fresh-air-system-installation.html">Fresh air system installation</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/when-dryer-vent-not-blowing.html">When dryer vent not blowing</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="ib-info">
+                        <p>Proper ductwork installation is critical for the efficiency and effectiveness of your HVAC system. New or upgraded ductwork can significantly improve air flow, reduce energy costs, and enhance indoor air quality. Over time, ducts can develop leaks, become clogged with dust and debris, and lose their ability to distribute air evenly throughout your home.</p>
+                        <p>Investing in professional ductwork installation ensures that your HVAC system operates at peak performance, providing comfort and efficiency for years to come.</p>
+
+                        <h3>Our Comprehensive Ductwork Installation Process</h3>
+                        <p>At HVA Climate Control, we offer a detailed and meticulous approach to ductwork installation:</p>
+                        <ul>
+                            <li><strong>Assessment:</strong> Our technicians conduct a thorough assessment of your home's layout and existing ductwork to determine the best installation strategy.</li>
+                            <li><strong>Customization:</strong> We design and customize ductwork that fits seamlessly with your HVAC system, ensuring optimal performance and air flow.</li>
+                            <li><strong>Installation:</strong> Our experienced technicians install the ductwork with precision, ensuring all connections are secure and airtight.</li>
+                            <li><strong>Testing:</strong> After installation, we thoroughly test the system to ensure it is working correctly and efficiently.</li>
+                        </ul>
+
+                        <h3>Benefits of Professional Ductwork Installation</h3>
+                        <p>Installing new ductwork offers numerous benefits:</p>
+                        <ul>
+                            <li><strong>Improved Air Quality:</strong> Properly installed ductwork helps eliminate dust, allergens, and other pollutants, resulting in cleaner, healthier air.</li>
+                            <li><strong>Enhanced System Efficiency:</strong> Well-designed and sealed ducts allow your HVAC system to operate more efficiently, reducing energy consumption and costs.</li>
+                            <li><strong>Increased Comfort:</strong> Even air distribution ensures consistent temperatures in every room, eliminating hot and cold spots.</li>
+                            <li><strong>Longer HVAC Lifespan:</strong> Reducing the strain on your HVAC system helps extend its life, delaying the need for costly replacements.</li>
+                        </ul>
+                        <p>Contact HVA Climate Control today to schedule your ductwork installation and experience the difference professionally installed ducts can make in your home's comfort and efficiency.</p>
+
+                        @@include("html/ctaintext.html", {
+                        "buttontext": "Install Now",
+                        })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/howitworks.html')
+
+        <div class="full-width full-width-faq">
+            <div class="container">
+                <div class="faq">
+                    <h2>FAQ and troubleshooting</h2>
+
+                    @@loop("html/faq/_html-template.html", [
+                    {"question": "How long does ductwork installation take?", "answer": "The duration of ductwork installation depends on the size and complexity of the job. Typically, most projects are completed within 1 to 3 days."},
+                    {"question": "Can new ductwork improve air quality?", "answer": "Yes, new ductwork can significantly improve indoor air quality by eliminating dust, allergens, and other pollutants that can accumulate in old ducts."},
+                    {"question": "Is professional ductwork installation cost-effective?", "answer": "Yes, professional installation ensures that your ducts are properly sealed and designed, improving system efficiency and reducing energy costs."},
+                    {"question": "Can you install ductwork in any type of home?", "answer": "We can install ductwork in various types of homes, from single-family houses to multi-story buildings. Our team is skilled at adapting our methods to different architectural styles and constraints."},
+                    {"question": "What are the benefits of replacing old ductwork?", "answer": "Replacing old ductwork can improve air flow, enhance system efficiency, reduce energy costs, and improve indoor air quality, providing a healthier and more comfortable living environment."}
+                    ])
+
+                    <script type="application/ld+json">
+                        {
+                          "@context": "https://schema.org",
+                          "@type": "FAQPage",
+                          "mainEntity": [@@loop("html/faq/_jsonld-template.html", [
+                          {"question": "How long does ductwork installation take?", "answer": "The duration of ductwork installation depends on the size and complexity of the job. Typically, most projects are completed within 1 to 3 days."},
+                          {"question": "Can new ductwork improve air quality?", "answer": "Yes, new ductwork can significantly improve indoor air quality by eliminating dust, allergens, and other pollutants that can accumulate in old ducts."},
+                          {"question": "Is professional ductwork installation cost-effective?", "answer": "Yes, professional installation ensures that your ducts are properly sealed and designed, improving system efficiency and reducing energy costs."},
+                          {"question": "Can you install ductwork in any type of home?", "answer": "We can install ductwork in various types of homes, from single-family houses to multi-story buildings. Our team is skilled at adapting our methods to different architectural styles and constraints."},
+                          {"question": "What are the benefits of replacing old ductwork?", "answer": "Replacing old ductwork can improve air flow, enhance system efficiency, reduce energy costs, and improve indoor air quality, providing a healthier and more comfortable living environment."}
+                          ])]
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+        @@include('html/reviews.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Gas furnace replacement in Portland | Vancouver - HVA Climate Control",
+"desc": "Professional gas furnace replacement in Portland & Vancouver. Upgrade your heating system with our expert services - HVA Climate Control",
+"url": "//www.hvaclimate.com/gas-furnace-replace.html",
+"canonical": "https://www.hvaclimate.com/gas-furnace-replace.html",
+"image": "//www.hvaclimate.com/images/gas-furnace-replace.jpg",
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+        @@include('html/firstscreen.html', {
+        "fctitle": "Gas furnace replacement&nbsp;—<br>efficient heating for your home!",
+        "fcdesc": "Upgrade to a new gas furnace<br>with our professional <em>replacement services</em>",
+        "fcimgpath": "images/gas-furnace-replace",
+        "fcimgalt": "Technician installing a new gas furnace",
+        "fcbutton": "Replace My Furnace",
+        "fccssclass": "fc-gas-furnace-replace"
+        })
+
+        @@include('html/trustedbar.html')
+
+        @@include('html/breadcrumbs3.html', {
+        "title0":"HVA Climate Control",
+        "link0":"//www.hvaclimate.com",
+        "title1":"Heating",
+        "link1":"//www.hvaclimate.com/heating.html",
+        "title2":"Gas furnace replacement",
+        "link2":"//www.hvaclimate.com/gas-furnace-replace.html",
+        })
+
+        <div class="full-width full-width-ib">
+            <div class="container">
+                <h2>Professional Gas Furnace Replacement Services</h2>
+                <div class="infobox">
+                    <nav>
+                        <ul class="ib-menu">
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-installation.html">Gas furnace installation</a></li>
+                            <li><span class="ibm-item" data-href="//www.hvaclimate.com/gas-furnace-replace.html">Gas furnace replacement</span></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-repair.html">Gas furnace repair</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-tune-up.html">Gas furnace tune-up</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-upgrade.html">Gas furnace upgrade</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-maintenance.html">Gas furnace maintenance</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/emergency-gas-furnace-repair.html">Emergency gas furnace repair</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="ib-info">
+                        <h3>Why Replace Your Gas Furnace?</h3>
+                        <p>Upgrading to a new gas furnace can significantly improve your home's heating efficiency, reduce energy costs, and enhance indoor comfort. Older furnaces often struggle to maintain consistent temperatures and may require frequent repairs. At HVA Climate Control, we provide expert gas furnace replacement services in Portland and Vancouver to ensure your home stays warm and comfortable.</p>
+
+                        <h3>Signs It's Time for a Furnace Replacement</h3>
+                        <ul>
+                            <li><strong>Age of Furnace:</strong> Furnaces over 15 years old may not operate efficiently.</li>
+                            <li><strong>Frequent Repairs:</strong> Increased repair frequency can indicate a failing system.</li>
+                            <li><strong>Rising Energy Bills:</strong> Higher bills may suggest your furnace is losing efficiency.</li>
+                            <li><strong>Uneven Heating:</strong> Inconsistent temperatures indicate performance issues.</li>
+                        </ul>
+
+                        <h3>Our Replacement Process</h3>
+                        <p>We make the replacement process seamless and stress-free:</p>
+                        <ul>
+                            <li>Assess your current system and heating needs.</li>
+                            <li>Recommend the best furnace options for your home.</li>
+                            <li>Provide a transparent quote with no hidden fees.</li>
+                            <li>Expertly install your new furnace for optimal performance.</li>
+                        </ul>
+
+                        <p>Upgrade your heating system today and enjoy a warmer, more efficient home.</p>
+
+                        @@include("html/ctaintext.html", {
+                        "buttontext": "Replace My Furnace",
+                        })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/howitworks.html')
+
+        <div class="full-width full-width-faq">
+            <div class="container">
+                <div class="faq">
+                    <h2>FAQ and troubleshooting</h2>
+
+                    @@loop("html/faq/_html-template.html", [
+                    {"question": "How do I know if my gas furnace needs replacement?", "answer": "If your furnace is over 15 years old, requires frequent repairs, or your energy bills are increasing, it may be time to consider a replacement."},
+                    {"question": "What are the benefits of a new gas furnace?", "answer": "A new gas furnace offers improved energy efficiency, lower energy bills, better indoor comfort, and enhanced safety features."},
+                    {"question": "How long does furnace replacement take?", "answer": "Most furnace replacements can be completed within a day. Our team works efficiently to minimize disruption to your home."},
+                    {"question": "Can I finance my new furnace?", "answer": "Yes, we offer flexible financing options to make your furnace replacement affordable. Contact us to learn more about financing plans."},
+                    {"question": "Do you offer warranties on new furnaces?", "answer": "Absolutely. All our new furnace installations come with manufacturer warranties and our workmanship guarantee for your peace of mind."}
+                    ])
+
+                    <script type="application/ld+json">
+                        {
+                          "@context": "https://schema.org",
+                          "@type": "FAQPage",
+                          "mainEntity": [@@loop("html/faq/_jsonld-template.html", [
+                          {"question": "How do I know if my gas furnace needs replacement?", "answer": "If your furnace is over 15 years old, requires frequent repairs, or your energy bills are increasing, it may be time to consider a replacement."},
+                          {"question": "What are the benefits of a new gas furnace?", "answer": "A new gas furnace offers improved energy efficiency, lower energy bills, better indoor comfort, and enhanced safety features."},
+                          {"question": "How long does furnace replacement take?", "answer": "Most furnace replacements can be completed within a day. Our team works efficiently to minimize disruption to your home."},
+                          {"question": "Can I finance my new furnace?", "answer": "Yes, we offer flexible financing options to make your furnace replacement affordable. Contact us to learn more about financing plans."},
+                          {"question": "Do you offer warranties on new furnaces?", "answer": "Absolutely. All our new furnace installations come with manufacturer warranties and our workmanship guarantee for your peace of mind."}
+                          ])]
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        @@include('html/reviews.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+</body>
+
+</html>

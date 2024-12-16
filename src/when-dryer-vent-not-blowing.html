@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+    "title": "When Dryer Vent Not Blowing - HVA Climate Control",
+    "desc": "Professional repair for dryer vents not blowing in Portland & Vancouver. Restore efficiency and safety - HVA Climate Control",
+    "url": "//www.hvaclimate.com/dryer-vent-not-blowing.html",
+    "canonical": "https://www.hvaclimate.com/dryer-vent-not-blowing.html",
+    "image": "//www.hvaclimate.com/images/dryer-vent-not-blowing.jpg",
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+        @@include('html/firstscreen.html', {
+            "fctitle": "When Dryer Vent<br>Not Blowing",
+            "fcdesc": "Restore your dryer's efficiency and safety<br>with our <em>expert dryer repair services</em>",
+            "fcimgpath": "images/dryer-vent-not-blowing",
+            "fcimgalt": "Technician repairing a dryer vent that is not blowing",
+            "fcbutton": "Fix Now",
+            "fccssclass": "fc-dryer-vent-not-blowing",
+        })
+
+        @@include('html/trustedbar.html')
+
+        @@include('html/breadcrumbs3.html', {
+        "title0":"HVA Climate Control",
+        "link0":"//www.hvaclimate.com",
+        "title1":"Ventilation",
+        "link1":"//www.hvaclimate.com/ventilation.html",
+        "title2":"Dryer Vent Not Blowing",
+        "link2":"//www.hvaclimate.com/when-dryer-vent-not-blowing.html",
+        })
+
+        <div class="full-width full-width-ib">
+            <div class="container">
+                <h2>Why a Functioning Dryer Vent is Important</h2>
+                <div class="infobox">
+                    <nav>
+                        <ul class="ib-menu">
+                            <li><span class="ibm-item" data-href="//www.hvaclimate.com/vent-cleaning.html">Vent cleaning</span></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/dryer-vent-cleaning.html">Dryer vent cleaning</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/ductwork-replacement.html">Ductwork replace</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/ductwork-installation.html">Ductwork installation</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/ductwork-repair.html">Ductwork repair</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/fresh-air-system-installation.html">Fresh air system installation</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/when-dryer-vent-not-blowing.html">When dryer vent not blowing</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="ib-info">
+                        <p>A dryer vent that is not blowing properly can cause numerous problems, from extended drying times and higher energy bills to potential fire hazards due to lint buildup. Ensuring that your dryer vent is functioning correctly is crucial for the efficiency and safety of your dryer. At HVA Climate Control, we specialize in diagnosing and repairing dryer vents to keep your home safe and your dryer working efficiently.</p>
+                        
+                        <h3>Our Comprehensive Dryer Vent Repair Process</h3>
+                        <p>Our team follows a meticulous process to ensure your dryer vent is repaired thoroughly:</p>
+                        <ul>
+                          <li><strong>Inspection:</strong> We conduct a detailed inspection to identify blockages, damage, or other issues affecting your dryer vent.</li>
+                          <li><strong>Cleaning:</strong> We remove lint and debris buildup to improve airflow and reduce fire risk.</li>
+                          <li><strong>Repair:</strong> We fix any damage to the vent, ensuring it is secure and functional.</li>
+                          <li><strong>Testing:</strong> After repairs, we test the vent to ensure it is blowing properly and efficiently.</li>
+                        </ul>
+                        
+                        <h3>Benefits of Professional Dryer Vent Repair</h3>
+                        <p>Repairing your dryer vent offers several benefits:</p>
+                        <ul>
+                          <li><strong>Increased Efficiency:</strong> A clear, functioning vent reduces drying times and energy use.</li>
+                          <li><strong>Improved Safety:</strong> Removing lint buildup significantly reduces the risk of dryer fires.</li>
+                          <li><strong>Extended Appliance Life:</strong> Proper ventilation helps your dryer operate smoothly, extending its lifespan.</li>
+                          <li><strong>Cost Savings:</strong> Efficient drying cycles reduce energy costs and the need for frequent repairs.</li>
+                        </ul>
+                        <p>Contact HVA Climate Control today to schedule your dryer vent repair and ensure your dryer operates safely and efficiently.</p>
+
+                        @@include("html/ctaintext.html", {
+                        "buttontext": "Fix Now",
+                        })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/howitworks.html')
+
+        <div class="full-width full-width-faq">
+            <div class="container">
+                <div class="faq">
+                    <h2>FAQ and troubleshooting</h2>
+
+                    @@loop("html/faq/_html-template.html", [
+                    {"question": "What are the signs my dryer vent is not blowing?", "answer": "Signs include longer drying times, clothes feeling hotter than usual, a burning smell, and excessive lint around the dryer area."},
+                    {"question": "How often should dryer vents be cleaned?", "answer": "It’s recommended to clean dryer vents at least once a year. Homes with frequent dryer use or pets may need more frequent cleanings."},
+                    {"question": "Can a clogged dryer vent cause a fire?", "answer": "Yes, clogged dryer vents can cause lint buildup, which is highly flammable and can lead to fires if not properly maintained."},
+                    {"question": "How long does dryer vent repair take?", "answer": "The duration depends on the extent of the problem, but most repairs and cleanings can be completed within 1 to 2 hours."},
+                    {"question": "Can I clean my dryer vent myself?", "answer": "While you can clean the lint trap regularly, professional cleaning and repair ensure the entire vent system is clear and safe. Professionals have the tools and expertise to do it thoroughly."}
+                    ])
+
+                    <script type="application/ld+json">
+                        {
+                          "@context": "https://schema.org",
+                          "@type": "FAQPage",
+                          "mainEntity": [@@loop("html/faq/_jsonld-template.html", [
+                          {"question": "What are the signs my dryer vent is not blowing?", "answer": "Signs include longer drying times, clothes feeling hotter than usual, a burning smell, and excessive lint around the dryer area."},
+                          {"question": "How often should dryer vents be cleaned?", "answer": "It’s recommended to clean dryer vents at least once a year. Homes with frequent dryer use or pets may need more frequent cleanings."},
+                          {"question": "Can a clogged dryer vent cause a fire?", "answer": "Yes, clogged dryer vents can cause lint buildup, which is highly flammable and can lead to fires if not properly maintained."},
+                          {"question": "How long does dryer vent repair take?", "answer": "The duration depends on the extent of the problem, but most repairs and cleanings can be completed within 1 to 2 hours."},
+                          {"question": "Can I clean my dryer vent myself?", "answer": "While you can clean the lint trap regularly, professional cleaning and repair ensure the entire vent system is clear and safe. Professionals have the tools and expertise to do it thoroughly."}
+                          ])]
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        @@include('html/reviews.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+</body>
+
+</html>

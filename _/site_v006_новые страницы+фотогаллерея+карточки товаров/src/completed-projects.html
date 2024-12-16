@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Completed HVAC Projects in Portland & Vancouver - HVA Climate Control",
+"desc": "Explore our completed HVAC projects in Portland & Vancouver. View photos and detailed descriptions of our work - HVA Climate Control",
+"url": "//www.hvaclimate.com/completed-projects.html",
+"canonical": "https://www.hvaclimate.com/completed-projects.html",
+"image": "//www.hvaclimate.com/images/completed-projects.jpg"
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+
+        @@include('html/breadcrumbs2.html', {
+        "title0":"HVA Climate Control",
+        "link0":"//www.hvaclimate.com",
+        "title1":"Completed projects",
+        "link1":"//www.hvaclimate.com/completed-projects.html",
+        })
+
+        <div class="full-width full-width-ga">
+            <div class="container">
+                <h2>Discover our projects</h2>
+                <div class="gallery-box">
+
+                    @@loop('html/gallery-item.html', [
+                    { "itemname":"00000020" },
+                    { "itemname":"00000019" },
+                    { "itemname":"00000018" },
+                    { "itemname":"00000017" },
+                    { "itemname":"00000016" },
+                    { "itemname":"00000014" },
+                    { "itemname":"00000015" },
+                    { "itemname":"00000012" },
+                    { "itemname":"00000013" },
+                    { "itemname":"00000011" },
+                    { "itemname":"00000010" },
+                    { "itemname":"00000009" },
+                    { "itemname":"00000008" },
+                    { "itemname":"00000007" },
+                    { "itemname":"00000006" },
+                    { "itemname":"00000003" },
+                    { "itemname":"00000004" },
+                    { "itemname":"00000005" },
+                    { "itemname":"00000002" },
+                    { "itemname":"00000001" },
+                    ])
+
+                    <button id="prevSlide">
+                        <svg fill="#000000" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.006 512.006" xml:space="preserve">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <g>
+                                        <path d="M388.419,475.59L168.834,256.005L388.418,36.421c8.341-8.341,8.341-21.824,0-30.165s-21.824-8.341-30.165,0 L123.586,240.923c-8.341,8.341-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251 c5.461,0,10.923-2.091,15.083-6.251C396.76,497.414,396.76,483.931,388.419,475.59z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                    <button id="nextSlide">
+                        <svg fill="#000000" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <g>
+                                        <path d="M388.418,240.915L153.752,6.248c-8.331-8.331-21.839-8.331-30.17,0c-8.331,8.331-8.331,21.839,0,30.17L343.163,256 L123.582,475.582c-8.331,8.331-8.331,21.839,0,30.17c8.331,8.331,21.839,8.331,30.17,0l234.667-234.667 C396.749,262.754,396.749,249.246,388.418,240.915z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const galleryContainer = document.querySelector('.gallery-box');
+            const slides = document.querySelectorAll('.gallery-item');
+            const nextButton = document.getElementById('nextSlide');
+            const prevButton = document.getElementById('prevSlide');
+
+            function showSlide(slide) {
+                let currentSlide = document.querySelector('.gallery-item.full-screen');
+
+                slides.forEach(s => s.classList.remove('full-screen'));
+                slide.classList.add('full-screen');
+                currentSlide = slide;
+            }
+
+            function prevSlide() {
+                let currentSlide = document.querySelector('.gallery-item.full-screen');
+
+                let prevSlide = currentSlide.previousElementSibling;
+                if (!prevSlide || !prevSlide.classList.contains('gallery-item')) {
+                    prevSlide = document.querySelector('.gallery-item:nth-last-child(3)');
+                }
+                showSlide(prevSlide);
+            }
+
+            function nextSlide() {
+                let currentSlide = document.querySelector('.gallery-item.full-screen');
+
+                let nextSlide = currentSlide.nextElementSibling;
+                if (!nextSlide || !nextSlide.classList.contains('gallery-item')) {
+                    nextSlide = document.querySelector('.gallery-item:first-child');
+                }
+                showSlide(nextSlide);
+            }
+
+            document.getElementById('prevSlide').addEventListener('click', prevSlide);
+            document.getElementById('nextSlide').addEventListener('click', nextSlide);
+
+
+
+            let galleryItems = document.querySelectorAll('.gallery-item');
+            galleryItems.forEach(element => {
+                element.addEventListener('click', function () {
+                    this.classList.toggle('full-screen');
+                });
+            });
+
+            // Переменные для отслеживания касаний
+            let startX = 0;
+            let startY = 0;
+            let isMoving = false;
+
+            // Пороговое значение для распознавания свайпа (в пикселях)
+            const swipeThreshold = 50;
+
+            // Обработчик начала касания
+            galleryContainer.addEventListener('touchstart', function (e) {
+                if (e.touches.length === 1) {
+                    startX = e.touches[0].clientX;
+                    startY = e.touches[0].clientY;
+                    isMoving = true;
+                }
+            }, false);
+
+            // Обработчик движения пальца по экрану
+            galleryContainer.addEventListener('touchmove', function (e) {
+                if (isMoving) {
+                    const currentX = e.touches[0].clientX;
+                    const currentY = e.touches[0].clientY;
+                    const diffX = startX - currentX;
+                    const diffY = startY - currentY;
+
+                    // Проверяем, является ли движение горизонтальным
+                    if (Math.abs(diffX) > Math.abs(diffY)) {
+                        e.preventDefault(); // Предотвращаем скроллинг страницы
+
+                        if (Math.abs(diffX) > swipeThreshold) {
+                            if (diffX > 0) {
+                                prevSlide(); // Свайп вправо - следующий слайд
+                            } else {
+                                nextSlide(); // Свайп влево - предыдущий слайд
+                            }
+                            isMoving = false; // Сброс состояния после распознавания свайпа
+                        }
+                    }
+                }
+            }, false);
+
+            // Обработчик окончания касания
+            galleryContainer.addEventListener('touchend', function () {
+                isMoving = false;
+            }, false);
+
+            // Дополнительно: Обработка свайпов с помощью мыши для десктопов
+            let mouseDown = false;
+            let mouseStartX = 0;
+
+            galleryContainer.addEventListener('mousedown', function (e) {
+                mouseDown = true;
+                mouseStartX = e.clientX;
+            }, false);
+
+            galleryContainer.addEventListener('mousemove', function (e) {
+                if (mouseDown) {
+                    const diffX = mouseStartX - e.clientX;
+
+                    if (Math.abs(diffX) > swipeThreshold) {
+                        if (diffX > 0) {
+                            prevSlide();
+                        } else {
+                            nextSlide();
+                        }
+                        mouseDown = false;
+                    }
+                }
+            }, false);
+
+            galleryContainer.addEventListener('mouseup', function () {
+                mouseDown = false;
+            }, false);
+
+            galleryContainer.addEventListener('mouseleave', function () {
+                mouseDown = false;
+            }, false);
+
+        </script>
+
+        @@include('html/reviews.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+</body>
+
+</html>

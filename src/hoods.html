@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Hoods repair and maintenance in Portland | Vancouver - HVA Climate Control",
+"desc": "Expert hood repair and maintenance in Portland & Vancouver. Keep your commercial hoods running efficiently - HVA Climate Control",
+"url": "//www.hvaclimate.com/hoods-repair-and-maintenance.html",
+"canonical": "https://www.hvaclimate.com/hoods-repair-and-maintenance.html",
+"image": "//www.hvaclimate.com/images/hoods-repair-and-maintenance.jpg",
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+        @@include('html/firstscreen.html', {
+        "fctitle": "Hoods maintenance&nbsp;—<br>keeping your kitchen safe and efficient!",
+        "fcdesc": "Ensure your kitchen hoods operate efficiently<br>with our <em>hood maintenance services</em>",
+        "fcimgpath": "images/hoods-repair-and-maintenance",
+        "fcimgalt": "Technician servicing a commercial kitchen hood",
+        "fcbutton": "Schedule Service",
+        "fccssclass": "fc-hoods-repair-and-maintenance"
+        })
+
+        @@include('html/trustedbar.html')
+
+        @@include('html/breadcrumbs3.html', {
+        "title0":"HVA Climate Control",
+        "link0":"//www.hvaclimate.com",
+        "title1":"Commercial Services",
+        "link1":"//www.hvaclimate.com/commercial.html",
+        "title2":"Hoods repair and maintenance",
+        "link2":"//www.hvaclimate.com/hoods-repair-and-maintenance.html",
+        })
+
+        <div class="full-width full-width-ib">
+            <div class="container">
+                <h2>Professional Hood Repair and Maintenance Services</h2>
+                <div class="infobox">
+                    <nav>
+                        <ul class="ib-menu">
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/commercial-refrigeration-systems-maintenance.html">Refrigeration</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/pizza-ovens.html">Pizza ovens</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/commercial-ovens.html">Commercial ovens</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/cooktops.html">Cooktops</a></li>
+                            <li><span class="ibm-item" data-href="//www.hvaclimate.com/hoods-repair-and-maintenance.html">Hoods</span></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/commercial-hvac-maintenance.html">Commercial HVAC maintenance</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="ib-info">
+                        <h3>Why Professional Hood Repair and Maintenance is Essential</h3>
+                        <p>In commercial kitchens, hoods play a crucial role in ensuring a safe and comfortable working environment. Regular repair and maintenance of kitchen hoods are vital to prevent fire hazards, improve air quality, and comply with health and safety regulations. At HVA Climate Control, we offer expert hood repair and maintenance services in Portland and Vancouver to keep your kitchen safe and efficient.</p>
+
+                        <h3>Our Comprehensive Hood Services</h3>
+                        <p>We provide a full range of services to maintain and repair your commercial kitchen hoods:</p>
+                        <ul>
+                            <li><strong>Inspection:</strong> Thorough examination of hoods, ducts, and ventilation systems to identify any issues.</li>
+                            <li><strong>Cleaning:</strong> Professional cleaning to remove grease and buildup that can pose fire risks.</li>
+                            <li><strong>Repair:</strong> Prompt repair of fans, motors, and other components to restore optimal functionality.</li>
+                            <li><strong>Maintenance:</strong> Regular maintenance schedules to ensure ongoing efficiency and compliance.</li>
+                        </ul>
+
+                        <h3>Benefits of Regular Hood Maintenance</h3>
+                        <p>Routine maintenance of your kitchen hoods offers numerous benefits:</p>
+                        <ul>
+                            <li><strong>Improved Safety:</strong> Reduces the risk of grease fires and improves air quality for staff.</li>
+                            <li><strong>Regulatory Compliance:</strong> Ensures compliance with health and safety codes and regulations.</li>
+                            <li><strong>Extended Equipment Life:</strong> Prevents excessive wear and tear, extending the lifespan of your hoods.</li>
+                            <li><strong>Energy Efficiency:</strong> Well-maintained hoods operate more efficiently, reducing energy costs.</li>
+                        </ul>
+
+                        @@include("html/ctaintext.html", {
+                        "buttontext": "Schedule Service",
+                        })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/howitworks.html')
+
+        <div class="full-width full-width-faq">
+            <div class="container">
+                <div class="faq">
+                    <h2>FAQ and troubleshooting</h2>
+
+                    @@loop("html/faq/_html-template.html", [
+                    {"question": "How often should I service my kitchen hoods?", "answer": "It's recommended to service and clean your kitchen hoods at least every three months to maintain safety and efficiency, though high-volume kitchens may require more frequent maintenance."},
+                    {"question": "What are common issues with commercial kitchen hoods?", "answer": "Common issues include grease buildup, fan malfunctions, clogged filters, and poor ventilation leading to smoke and odors in the kitchen."},
+                    {"question": "Do you offer emergency repair services?", "answer": "Yes, we provide emergency repair services to address urgent issues that may impact the safety and operation of your kitchen."},
+                    {"question": "Can regular maintenance save me money?", "answer": "Absolutely. Regular maintenance can prevent costly repairs, improve energy efficiency, and help avoid fines for non-compliance with safety regulations."},
+                    {"question": "Do you service all types of kitchen hoods?", "answer": "Yes, our technicians are experienced in servicing a wide range of commercial kitchen hoods, including canopy, downdraft, and exhaust hoods."}
+                    ])
+
+                    <script type="application/ld+json">
+                        {
+                          "@context": "https://schema.org",
+                          "@type": "FAQPage",
+                          "mainEntity": [@@loop("html/faq/_jsonld-template.html", [
+                          {"question": "How often should I service my kitchen hoods?", "answer": "It's recommended to service and clean your kitchen hoods at least every three months to maintain safety and efficiency, though high-volume kitchens may require more frequent maintenance."},
+                          {"question": "What are common issues with commercial kitchen hoods?", "answer": "Common issues include grease buildup, fan malfunctions, clogged filters, and poor ventilation leading to smoke and odors in the kitchen."},
+                          {"question": "Do you offer emergency repair services?", "answer": "Yes, we provide emergency repair services to address urgent issues that may impact the safety and operation of your kitchen."},
+                          {"question": "Can regular maintenance save me money?", "answer": "Absolutely. Regular maintenance can prevent costly repairs, improve energy efficiency, and help avoid fines for non-compliance with safety regulations."},
+                          {"question": "Do you service all types of kitchen hoods?", "answer": "Yes, our technicians are experienced in servicing a wide range of commercial kitchen hoods, including canopy, downdraft, and exhaust hoods."}
+                          ])]
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        @@include('html/reviews.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+</body>
+
+</html>

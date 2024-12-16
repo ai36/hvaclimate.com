@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Gas furnace maintenance in Portland | Vancouver - HVA Climate Control",
+"desc": "Professional gas furnace maintenance in Portland & Vancouver. Keep your heating system efficient with our expert services - HVA Climate Control",
+"url": "//www.hvaclimate.com/gas-furnace-maintenance.html",
+"canonical": "https://www.hvaclimate.com/gas-furnace-maintenance.html",
+"image": "//www.hvaclimate.com/images/gas-furnace-maintenance.jpg",
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+        @@include('html/firstscreen.html', {
+        "fctitle": "Gas furnace maintenance&nbsp;—<br>efficient heating for your home!",
+        "fcdesc": "Maintain your gas furnace<br>with our professional <em>maintenance services</em>",
+        "fcimgpath": "images/gas-furnace-maintenance",
+        "fcimgalt": "Technician performing maintenance on a gas furnace",
+        "fcbutton": "Schedule Maintenance",
+        "fccssclass": "fc-gas-furnace-maintenance"
+        })
+
+        @@include('html/trustedbar.html')
+
+        @@include('html/breadcrumbs3.html', {
+        "title0":"HVA Climate Control",
+        "link0":"//www.hvaclimate.com",
+        "title1":"Heating",
+        "link1":"//www.hvaclimate.com/heating.html",
+        "title2":"Gas furnace maintenance",
+        "link2":"//www.hvaclimate.com/gas-furnace-maintenance.html",
+        })
+
+        <div class="full-width full-width-ib">
+            <div class="container">
+                <h2>Professional Gas Furnace Maintenance Services</h2>
+                <div class="infobox">
+                    <nav>
+                        <ul class="ib-menu">
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-installation.html">Gas furnace installation</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-replace.html">Gas furnace replacement</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-repair.html">Gas furnace repair</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-tune-up.html">Gas furnace tune-up</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-upgrade.html">Gas furnace upgrade</a></li>
+                            <li><span class="ibm-item" data-href="//www.hvaclimate.com/gas-furnace-maintenance.html">Gas furnace maintenance</span></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/emergency-gas-furnace-repair.html">Emergency gas furnace repair</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="ib-info">
+                        <h3>The Importance of Regular Gas Furnace Maintenance</h3>
+                        <p>Regular maintenance of your gas furnace is essential to ensure safe and efficient operation throughout the heating season. Preventive maintenance helps identify potential issues before they become costly repairs and keeps your heating system running at peak performance. At HVA Climate Control, we offer professional gas furnace maintenance services in Portland and Vancouver to keep your home warm and comfortable.</p>
+
+                        <h3>Benefits of Professional Furnace Maintenance</h3>
+                        <p>Our comprehensive maintenance services provide numerous advantages:</p>
+                        <ul>
+                            <li><strong>Improved Efficiency:</strong> Regular maintenance optimizes your furnace's performance, reducing energy consumption.</li>
+                            <li><strong>Extended Lifespan:</strong> Keeping your furnace in good condition prolongs its operational life.</li>
+                            <li><strong>Enhanced Safety:</strong> We check for gas leaks and other safety hazards to protect your home.</li>
+                            <li><strong>Preventive Repairs:</strong> Early detection of issues can prevent costly breakdowns.</li>
+                        </ul>
+
+                        <h3>Our Maintenance Process</h3>
+                        <p>Our skilled technicians perform a thorough inspection and maintenance of your gas furnace, including:</p>
+                        <ul>
+                            <li>Inspecting and cleaning burners and heat exchangers.</li>
+                            <li>Checking the ignition system and safety controls.</li>
+                            <li>Lubricating moving parts to reduce wear.</li>
+                            <li>Testing thermostat accuracy and system controls.</li>
+                            <li>Replacing or cleaning air filters for better air quality.</li>
+                        </ul>
+
+                        <p>Schedule your gas furnace maintenance today to ensure your heating system is ready for the cold months ahead.</p>
+
+                        @@include("html/ctaintext.html", {
+                        "buttontext": "Schedule Maintenance",
+                        })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/howitworks.html')
+
+        <div class="full-width full-width-faq">
+            <div class="container">
+                <div class="faq">
+                    <h2>FAQ and troubleshooting</h2>
+
+                    @@loop("html/faq/_html-template.html", [
+                    {"question": "How often should I schedule gas furnace maintenance?", "answer": "It's recommended to schedule gas furnace maintenance at least once a year, preferably before the heating season begins, to ensure optimal performance and safety."},
+                    {"question": "What does gas furnace maintenance include?", "answer": "Our maintenance service includes a thorough inspection, cleaning, and tuning of your furnace components to enhance efficiency, safety, and reliability."},
+                    {"question": "Can regular maintenance save me money?", "answer": "Yes, regular maintenance improves efficiency, reducing energy costs, and helps prevent expensive repairs by identifying issues early."},
+                    {"question": "What are signs my furnace needs maintenance?", "answer": "Signs include uneven heating, unusual noises, frequent cycling, higher energy bills, or a yellow pilot light. If you notice any of these, it's time for maintenance."},
+                    {"question": "Do you offer maintenance plans?", "answer": "Yes, we offer customizable maintenance plans to fit your needs and ensure your furnace receives regular care."}
+                    ])
+
+                    <script type="application/ld+json">
+                        {
+                          "@context": "https://schema.org",
+                          "@type": "FAQPage",
+                          "mainEntity": [@@loop("html/faq/_jsonld-template.html", [
+                          {"question": "How often should I schedule gas furnace maintenance?", "answer": "It's recommended to schedule gas furnace maintenance at least once a year, preferably before the heating season begins, to ensure optimal performance and safety."},
+                          {"question": "What does gas furnace maintenance include?", "answer": "Our maintenance service includes a thorough inspection, cleaning, and tuning of your furnace components to enhance efficiency, safety, and reliability."},
+                          {"question": "Can regular maintenance save me money?", "answer": "Yes, regular maintenance improves efficiency, reducing energy costs, and helps prevent expensive repairs by identifying issues early."},
+                          {"question": "What are signs my furnace needs maintenance?", "answer": "Signs include uneven heating, unusual noises, frequent cycling, higher energy bills, or a yellow pilot light. If you notice any of these, it's time for maintenance."},
+                          {"question": "Do you offer maintenance plans?", "answer": "Yes, we offer customizable maintenance plans to fit your needs and ensure your furnace receives regular care."}
+                          ])]
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        @@include('html/reviews.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+</body>
+
+</html>

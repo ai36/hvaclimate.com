@@ -1,3 +1,9 @@
+# Other
+dist/
+src/img/products/orig/
+src/img/projects/orig/
+src/img/src/
+
 # Logs
 logs
 *.log

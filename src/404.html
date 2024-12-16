@@ -1,0 +1,36 @@
+<!-- после сборки проекта переименовать 404.html в 404.php и поместить в папку wordpress-темы -->
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "404 Page Not Found - HVA Climate Control",
+"desc": "404 Page Not Found - HVA Climate Control",
+"url": "//www.hvaclimate.com/404.html",
+"canonical": "https://www.hvaclimate.com/404.html",
+"image": "//www.hvaclimate.com/images/404.jpg",
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+        <div class="container container--404">
+            <div class="page404">
+                <p>404</p>
+                <p>Page not found</p>
+            </div>
+        </div>
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+    @@include('html/redirect.html')
+</body>
+
+</html>

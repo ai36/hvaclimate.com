@@ -1,0 +1,17 @@
+<?php
+
+echo('
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XJZ7NJ3D9S"></script>
+');
+echo("
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-XJZ7NJ3D9S');
+    </script>
+");
+
+?>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Professional air conditioning repair services in Portland & Vancouver - HVA Climate Control",
+"desc": "Trust HVA Climate Control for expert air conditioning repair services in Portland and Vancouver. Fast, reliable, and affordable solutions for all your AC needs - HVA Climate Control",
+"url": "//www.hvaclimate.com/air-conditioning-repair.html",
+"canonical": "https://www.hvaclimate.com/air-conditioning-repair.html",
+"image": "//www.hvaclimate.com/images/air-conditioning-repair.jpg",
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+        @@include('html/firstscreen.html', {
+        "fctitle": "Air conditioning repair&nbsp;—<br>fast, safe, and effective!",
+        "fcdesc": "Cool comfort, expert care —<br>Beat the heat <em>today!</em>",
+        "fcimgpath": "images/air-conditioning-repair",
+        "fcimgalt": "Expert AC repair by HVA Climate Control - serving Portland & Vancouver",
+        "fcbutton": "Schedule now",
+        "fccssclass": "fc-air-condition-repair",
+        })
+
+        @@include('html/trustedbar.html')
+
+        @@include('html/breadcrumbs3.html', {
+        "title0":"HVA Climate Control",
+        "link0":"//www.hvaclimate.com",
+        "title1":"Air condition",
+        "link1":"//www.hvaclimate.com/air-condition.html",
+        "title2":"Air conditioning repair",
+        "link2":"//www.hvaclimate.com/air-conditioning-repair.html",
+        })
+
+        <div class="full-width full-width-ib">
+            <div class="container">
+                <h2>Expert air conditioning repair service</h2>
+                <div class="infobox">
+                    <nav>
+                        <ul class="ib-menu">
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/air-conditioner-installation.html">Air conditioner installation</a></li>
+                            <li><span class="ibm-item" data-href="//www.hvaclimate.com/air-conditioning-repair.html">Air conditioning repair</span></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/minisplit-installation.html">Minisplit installation</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/air-filter-replacement.html">Air filter replacement</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/air-conditioning-tune-up.html">Air conditioning tune up</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/air-conditioner-froze.html">If the air conditioner is frozen</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/air-handler-repair.html">Air handler repair</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/emergency-ac-repair.html">Emergency AC repair</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="ib-info">
+                        <h3>Your Solution for a Cooler Home</h3>
+                        <p>
+                            When your air conditioning system fails, you need fast, reliable service. That's where our expert AC repair services come in, available throughout Portland and Vancouver. We ensure your system works efficiently when you need it most.
+                        </p>
+                        <h3>Rapid Response and Reliable Service</h3>
+                        <p>Our experienced technicians are ready to tackle any AC issues with the right tools and expertise. We respond quickly to your calls, offering same-day service to get your system back in operation without delay.
+                        </p>
+                        <h3>Comprehensive Diagnostics and Repair</h3>
+                        <p>We start with a thorough diagnosis to identify the root cause of your air conditioner's problems. Our team is equipped to handle repairs on all major AC brands and models, ensuring a correct and efficient fix.
+                        </p>
+                        <h3>Preventative Maintenance to Avoid Future Issues</h3>
+                        <p>In addition to repair services, we offer maintenance packages to keep your air conditioning system running at its best. Regular maintenance can prevent future breakdowns and extend the life of your unit.
+                        </p>
+                        <h3>Why Choose Us for AC Repair?</h3>
+                        <ul>
+                            <li><strong>Skilled Technicians:</strong> Our certified technicians have extensive experience.</li>
+                            <li><strong>Efficient Service:</strong> We value your time, providing quick and effective repairs.</li>
+                            <li><strong>Transparent Pricing:</strong> No hidden fees—just straightforward, competitive pricing.</li>
+                        </ul>
+                        <h3>Stay Cool with Reliable AC Repair</h3>
+                        <p>Don't let a broken air conditioner ruin your comfort. Contact us today for professional and dependable AC repair services. Let us help you maintain a cool and comfortable environment in your home.
+                        </p>
+
+                        @@include("html/ctaintext.html", {
+                        "buttontext": "Request a consultation",
+                        })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/howitworks.html')
+
+        <div class="full-width full-width-faq">
+            <div class="container">
+                <div class="faq">
+                    <h2>FAQ and troubleshooting</h2>
+
+                    @@loop("html/faq/_html-template.html", [
+                    { "question": "How often should my AC be serviced?", "answer": "We recommend servicing your air conditioning system at least once a year to ensure it runs efficiently and to prevent potential failures during peak usage times." },
+                    { "question": "What signs indicate I need AC repair?", "answer": "Key signs include unusual noises, weak airflow, warm air output, frequent cycles, and higher than usual energy bills." },
+                    { "question": "Can you repair any type of AC?", "answer": "Yes, our technicians are equipped to repair all types of air conditioning systems, including central air, split systems, and window units." },
+                    { "question": "How long does an AC repair take?", "answer": "Most repairs are completed on the same day. Complex issues may require more time, which we will communicate upfront." },
+                    { "question": "What is included in your AC repair service?", "answer": "Our service includes diagnostics, repair, parts replacement as necessary, and a final test to ensure your system is fully operational." },
+                    ])
+
+                    <script type="application/ld+json">
+                        {
+                          "@context": "https://schema.org",
+                          "@type": "FAQPage",
+                          "mainEntity": [@@loop("html/faq/_jsonld-template.html", [
+                          { "question": "How often should my AC be serviced?", "answer": "We recommend servicing your air conditioning system at least once a year to ensure it runs efficiently and to prevent potential failures during peak usage times." },
+                          { "question": "What signs indicate I need AC repair?", "answer": "Key signs include unusual noises, weak airflow, warm air output, frequent cycles, and higher than usual energy bills." },
+                          { "question": "Can you repair any type of AC?", "answer": "Yes, our technicians are equipped to repair all types of air conditioning systems, including central air, split systems, and window units." },
+                          { "question": "How long does an AC repair take?", "answer": "Most repairs are completed on the same day. Complex issues may require more time, which we will communicate upfront." },
+                          { "question": "What is included in your AC repair service?", "answer": "Our service includes diagnostics, repair, parts replacement as necessary, and a final test to ensure your system is fully operational." },
+                          ])]
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        @@include('html/reviews.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+</body>
+
+</html>

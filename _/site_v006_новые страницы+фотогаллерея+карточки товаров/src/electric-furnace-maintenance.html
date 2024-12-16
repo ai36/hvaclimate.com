@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Electric Furnace Maintenance Services",
+"desc": "Expert electric furnace maintenance in Portland & Vancouver. Ensure efficiency and extend the life of your system.",
+"url": "//www.hvaclimate.com/electric-furnace-maintenance.html",
+"canonical": "https://www.hvaclimate.com/electric-furnace-maintenance.html",
+"image": "//www.hvaclimate.com/images/electric-furnace-maintenance.jpg",
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+        @@include('html/firstscreen.html', {
+        "fctitle": "Electric Furnace<br>Maintenance Services",
+        "fcdesc": "Extend efficiency and lifespan of your heating system<br>with our expert <em>electric furnace maintenance</em> services",
+        "fcimgpath": "images/electric-furnace-maintenance",
+        "fcimgalt": "Technician performing maintenance on an electric furnace",
+        "fcbutton": "Schedule Now",
+        "fccssclass": "fc-electric-furnace-maintenance",
+        })
+
+        @@include('html/trustedbar.html')
+
+        @@include('html/breadcrumbs3.html', {
+        "title0":"HVA Climate Control",
+        "link0":"//www.hvaclimate.com",
+        "title1":"Heating",
+        "link1":"//www.hvaclimate.com/heating.html",
+        "title2":"Electric furnace maintenance",
+        "link2":"//www.hvaclimate.com/electric-furnace-maintenance.html",
+        })
+
+        <div class="full-width full-width-ib">
+            <div class="container">
+                <h2>Why Regular Electric Furnace Maintenance is Essential</h2>
+                <div class="infobox">
+                    <nav>
+                        <ul class="ib-menu">
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/electric-furnace-installation.html">Electric furnace installation</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/electric-furnace-replace.html">Electric furnace replace</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/electric-furnace-repair.html">Electric furnace repair</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/electric-furnace-tune-up.html">Electric furnace Tune-up</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/electric-furnace-upgrade.html">Electric furnace upgrade</a></li>
+                            <li><span class="ibm-item" data-href="//www.hvaclimate.com/electric-furnace-maintenance.html">Electric furnace maintenance</span></li>
+                        </ul>
+                    </nav>
+
+                    <div class="ib-info">
+                        <p>Regular maintenance of your electric furnace is crucial for ensuring it operates efficiently and reliably throughout the colder months. Without proper care, your furnace can become less efficient, leading to higher energy bills and an increased risk of breakdowns. By scheduling regular maintenance, you can extend the lifespan of your system, improve indoor air quality, and avoid costly repairs down the road.</p>
+
+                        <h3>Our Comprehensive Electric Furnace Maintenance Process</h3>
+                        <p>At HVA Climate Control, we offer a thorough maintenance service that covers every aspect of your electric furnace:</p>
+                        <ul>
+                            <li><strong>Inspection:</strong> Our technicians perform a detailed inspection of your furnace, checking for wear and tear, electrical issues, and other potential problems.</li>
+                            <li><strong>Cleaning:</strong> We clean the furnace components, including the blower, filters, and vents, to ensure optimal airflow and efficiency.</li>
+                            <li><strong>Tuning:</strong> We make any necessary adjustments to the thermostat, heating elements, and controls to ensure your furnace is operating at peak performance.</li>
+                            <li><strong>Testing:</strong> After maintenance, we thoroughly test the system to verify it is functioning correctly and efficiently.</li>
+                        </ul>
+
+                        <h3>Benefits of Professional Electric Furnace Maintenance</h3>
+                        <p>Maintaining your electric furnace provides numerous benefits:</p>
+                        <ul>
+                            <li><strong>Improved Efficiency:</strong> Regular maintenance keeps your furnace running smoothly, reducing energy consumption and lowering utility bills.</li>
+                            <li><strong>Extended Lifespan:</strong> Routine care helps prevent wear and tear, extending the life of your furnace and delaying the need for replacement.</li>
+                            <li><strong>Enhanced Comfort:</strong> A well-maintained furnace provides consistent and reliable heating, ensuring your home stays comfortable during the coldest months.</li>
+                            <li><strong>Prevention of Breakdowns:</strong> Early detection and repair of potential issues prevent unexpected breakdowns and costly emergency repairs.</li>
+                        </ul>
+                        <p>Contact HVA Climate Control today to schedule your electric furnace maintenance and ensure your heating system operates efficiently and reliably all season long.</p>
+
+                        @@include("html/ctaintext.html", {
+                        "buttontext": "Schedule Now",
+                        })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/howitworks.html')
+
+        <div class="full-width full-width-faq">
+            <div class="container">
+                <div class="faq">
+                    <h2>FAQ and troubleshooting</h2>
+
+                    @@loop("html/faq/_html-template.html", [
+                    {"question": "How often should I schedule electric furnace maintenance?", "answer": "It's recommended to schedule maintenance for your electric furnace at least once a year, ideally before the heating season begins. Regular maintenance ensures optimal performance and longevity."},
+                    {"question": "What does electric furnace maintenance include?", "answer": "Maintenance includes a thorough inspection, cleaning of components, necessary adjustments, and testing to ensure your furnace operates efficiently and reliably. Our service covers all aspects of your furnace’s operation."},
+                    {"question": "Can regular maintenance prevent furnace breakdowns?", "answer": "Yes, regular maintenance helps identify and fix small issues before they become major problems, reducing the risk of unexpected breakdowns and costly repairs."},
+                    {"question": "Is furnace maintenance cost-effective?", "answer": "Absolutely. Routine maintenance improves efficiency, reduces energy costs, extends the lifespan of your furnace, and prevents expensive repairs, making it a cost-effective way to maintain your heating system."},
+                    {"question": "Can I perform furnace maintenance myself?", "answer": "While some basic tasks like changing filters can be done by homeowners, professional maintenance is essential for a thorough inspection and tuning. Our technicians have the expertise to ensure your furnace operates at its best."}
+                    ])
+
+                    <script type="application/ld+json">
+                        {
+                          "@context": "https://schema.org",
+                          "@type": "FAQPage",
+                          "mainEntity": [@@loop("html/faq/_jsonld-template.html", [
+                          {"question": "How often should I schedule electric furnace maintenance?", "answer": "It's recommended to schedule maintenance for your electric furnace at least once a year, ideally before the heating season begins. Regular maintenance ensures optimal performance and longevity."},
+                          {"question": "What does electric furnace maintenance include?", "answer": "Maintenance includes a thorough inspection, cleaning of components, necessary adjustments, and testing to ensure your furnace operates efficiently and reliably. Our service covers all aspects of your furnace’s operation."},
+                          {"question": "Can regular maintenance prevent furnace breakdowns?", "answer": "Yes, regular maintenance helps identify and fix small issues before they become major problems, reducing the risk of unexpected breakdowns and costly repairs."},
+                          {"question": "Is furnace maintenance cost-effective?", "answer": "Absolutely. Routine maintenance improves efficiency, reduces energy costs, extends the lifespan of your furnace, and prevents expensive repairs, making it a cost-effective way to maintain your heating system."},
+                          {"question": "Can I perform furnace maintenance myself?", "answer": "While some basic tasks like changing filters can be done by homeowners, professional maintenance is essential for a thorough inspection and tuning. Our technicians have the expertise to ensure your furnace operates at its best."}
+                          ])]
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        @@include('html/reviews.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Premier Water Heater Replacement in Portland & Vancouver - HVA Climate Control",
+"desc": "Seeking water heater replacement services in Portland or Vancouver? Look no further! Our trusted team delivers premier solutions for replacing your water heater, ensuring uninterrupted hot water supply. Whether it's gas or electric, count on us for expert assistance. Contact us today for reliable service you can trust! - HVA Climate Control",
+"url": "//www.hvaclimate.com/water-heater-replacement.html",
+"canonical": "https://www.hvaclimate.com/water-heater-replacement.html",
+"image": "//www.hvaclimate.com/images/water-heater-replacement.jpg",
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+        @@include('html/firstscreen.html', {
+        "fctitle": "Water heater replacement&nbsp;—<br>fast, safe, and effective!",
+        "fcdesc": "Efficient replacements for uninterrupted<br>hot water — <em>trust our expertise</em>",
+        "fcimgpath": "images/water-heater-replacement",
+        "fcimgalt": "Water heater replacement services - HVA Climate Control",
+        "fcbutton": "Get warm",
+        })
+
+        @@include('html/trustedbar.html')
+
+        @@include('html/breadcrumbs3.html', {
+        "title0":"HVA Climate Control",
+        "link0":"//www.hvaclimate.com",
+        "title1":"Heating",
+        "link1":"//www.hvaclimate.com/heating.html",
+        "title2":"Water heater replacement",
+        "link2":"//www.hvaclimate.com/water-heater-replacement.html",
+        })
+
+        <div class="full-width full-width-ib">
+            <div class="container">
+                <h2>Expert water heater replacement services</h2>
+                <div class="infobox">
+                    <nav>
+                        <ul class="ib-menu">
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/water-heater-installation.html">Installation of new heaters</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/water-heater-maintenance.html">Maintenance & inspections</a></li>
+                            <li><span class="ibm-item" data-href="//www.hvaclimate.com/water-heater-replacement.html">Water heater replacement</span></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/water-heater-repair.html">Repair & restoration</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/water-heater-upgrade.html">Water system upgrades</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/water-quality-improvement.html">Water quality improvement</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="ib-info">
+                        <h3>Reliable Water Heater Replacement</h3>
+                        <p>Is your water heater failing to deliver the hot water you need? Our expert water heater replacement services in Portland and Vancouver can restore your home's comfort and efficiency quickly and reliably.</p>
+                        
+                        <h3>When to Replace Your Water Heater</h3>
+                        <p>If you're experiencing consistent issues such as insufficient hot water, noises, leaks, or if your water heater is over ten years old, it might be time to consider a replacement.</p>
+                        
+                        <h3>Our Replacement Process</h3>
+                        <ul>
+                          <li><strong>Assessment:</strong> Our technicians will assess your current water heater and recommend the best replacement.</li>
+                          <li><strong>Selection:</strong> We help you choose the most efficient model that fits your budget and needs.</li>
+                          <li><strong>Installation:</strong> Our experienced team will install your new water heater, ensuring it operates efficiently and safely.</li>
+                        </ul>
+                        
+                        <h3>Benefits of New Water Heaters</h3>
+                        <p>Upgrading your water heater can provide significant benefits:</p>
+                        <ul>
+                          <li><strong>Improved Efficiency:</strong> Newer models are more energy-efficient, reducing your utility bills.</li>
+                          <li><strong>Greater Reliability:</strong> Enjoy consistent hot water without the worry of breakdowns.</li>
+                          <li><strong>Enhanced Safety:</strong> Modern water heaters incorporate improved safety features to protect your home.</li>
+                        </ul>
+
+                        @@include("html/ctaintext.html", {
+                        "buttontext": "Replace now",
+                        })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/howitworks.html')
+
+        <div class="full-width full-width-faq">
+            <div class="container">
+                <div class="faq">
+                    <h2>FAQ and troubleshooting</h2>
+
+                    @@loop("html/faq/_html-template.html", [
+                    {"question": "How long does installation take?", "answer": "Most water heater replacements are completed within a few hours, minimizing disruption to your daily routine."},
+                    {"question": "What type of water heaters do you install?", "answer": "We install a variety of water heaters, including tankless, electric, and gas models, depending on your preference and needs."},
+                    {"question": "Is a tankless water heater better?", "answer": "Tankless water heaters are more energy-efficient as they heat water on demand and do not store water, reducing energy costs over time."},
+                    {"question": "Can I finance my new water heater?", "answer": "Yes, we offer financing options to make your water heater replacement affordable. Please contact us for more details."},
+                    {"question": "What warranty comes with installation?", "answer": "Our water heater installations come with a comprehensive warranty covering parts and labor, ensuring your peace of mind."}
+                                        ])
+
+                    <script type="application/ld+json">
+                        {
+                          "@context": "https://schema.org",
+                          "@type": "FAQPage",
+                          "mainEntity": [@@loop("html/faq/_jsonld-template.html", [
+                          {"question": "How long does installation take?", "answer": "Most water heater replacements are completed within a few hours, minimizing disruption to your daily routine."},
+                          {"question": "What type of water heaters do you install?", "answer": "We install a variety of water heaters, including tankless, electric, and gas models, depending on your preference and needs."},
+                          {"question": "Is a tankless water heater better?", "answer": "Tankless water heaters are more energy-efficient as they heat water on demand and do not store water, reducing energy costs over time."},
+                          {"question": "Can I finance my new water heater?", "answer": "Yes, we offer financing options to make your water heater replacement affordable. Please contact us for more details."},
+                          {"question": "What warranty comes with installation?", "answer": "Our water heater installations come with a comprehensive warranty covering parts and labor, ensuring your peace of mind."}
+                          ])]
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        @@include('html/reviews.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+</body>
+
+</html>

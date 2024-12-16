@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Ductwork Repair Services - HVA Climate Control",
+"desc": "Expert ductwork repair in Portland & Vancouver. Restore efficiency and air quality with our help - HVA Climate Control",
+"url": "//www.hvaclimate.com/ductwork-repair.html",
+"canonical": "https://www.hvaclimate.com/ductwork-repair.html",
+"image": "//www.hvaclimate.com/images/ductwork-repair.jpg"
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+        @@include('html/firstscreen.html', {
+        "fctitle": "Professional<br>Ductwork Repair Services",
+        "fcdesc": "Improve indoor air quality<br>with expert <em>ductwork repair services</em>",
+        "fcimgpath": "images/ductwork-repair",
+        "fcimgalt": "Technician performing ductwork repair in a residential property",
+        "fcbutton": "Repair Now",
+        "fccssclass": "fc-ductwork-repair"
+        })
+
+        @@include('html/trustedbar.html')
+
+        @@include('html/breadcrumbs3.html', {
+        "title0":"HVA Climate Control",
+        "link0":"//www.hvaclimate.com",
+        "title1":"Ventilation",
+        "link1":"//www.hvaclimate.com/ventilation.html",
+        "title2":"Ductwork repair",
+        "link2":"//www.hvaclimate.com/ductwork-repair.html",
+        })
+
+        <div class="full-width full-width-ib">
+            <div class="container">
+                <h2>Enhance Your Home’s Air Quality</h2>
+                <div class="infobox">
+                    <nav>
+                        <ul class="ib-menu">
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/vent-cleaning.html">Vent cleaning</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/dryer-vent-cleaning.html">Dryer vent cleaning</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/ductwork-replacement.html">Ductwork replacement</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/ductwork-installation.html">Ductwork installation</a></li>
+                            <li><span class="ibm-item" data-href="//www.hvaclimate.com/ductwork-repair.html">Ductwork repair</span></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/fresh-air-system-installation.html">Fresh air system installation</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/when-dryer-vent-not-blowing.html">When dryer vent not blowing</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="ib-info">
+                        <p>Over time, ductwork can develop leaks, accumulate dust and debris, and suffer damage that impacts the efficiency and effectiveness of your HVAC system. Damaged ducts can lead to uneven heating and cooling, higher energy bills, and poor indoor air quality. Timely ductwork repair is crucial to maintaining the performance of your HVAC system and ensuring a comfortable home environment.</p>
+
+                        <h3>Our Comprehensive Ductwork Repair Process</h3>
+                        <p>At HVA Climate Control, we offer a thorough approach to ductwork repair to ensure your system operates efficiently:</p>
+                        <ul>
+                            <li><strong>Inspection:</strong> Our technicians conduct a detailed inspection to identify leaks, damage, and areas of inefficiency in your ductwork.</li>
+                            <li><strong>Sealing:</strong> We use high-quality materials to seal leaks and prevent air loss, ensuring optimal airflow throughout your home.</li>
+                            <li><strong>Cleaning:</strong> We remove dust, debris, and contaminants from your ducts to improve air quality and system efficiency.</li>
+                            <li><strong>Repair:</strong> Any damaged sections of ductwork are repaired or replaced to restore the integrity of your HVAC system.</li>
+                        </ul>
+
+                        <h3>Benefits of Professional Ductwork Repair</h3>
+                        <p>Repairing your ductwork offers several benefits:</p>
+                        <ul>
+                            <li><strong>Improved Air Quality:</strong> Sealed and clean ducts reduce the presence of dust, allergens, and other pollutants, ensuring healthier air in your home.</li>
+                            <li><strong>Enhanced System Efficiency:</strong> Properly repaired ductwork allows your HVAC system to operate more efficiently, reducing energy consumption and costs.</li>
+                            <li><strong>Increased Comfort:</strong> Even air distribution ensures consistent temperatures in every room, eliminating hot and cold spots.</li>
+                            <li><strong>Cost Savings:</strong> Addressing leaks and damage promptly can prevent costly repairs and extend the lifespan of your HVAC system.</li>
+                        </ul>
+                        <p>Contact HVA Climate Control today to schedule your ductwork repair and experience the difference in your home's comfort and efficiency.</p>
+
+                        @@include("html/ctaintext.html", {
+                        "buttontext": "Repair Now",
+                        })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/howitworks.html')
+
+        <div class="full-width full-width-faq">
+            <div class="container">
+                <div class="faq">
+                    <h2>FAQ and troubleshooting</h2>
+
+                    @@loop("html/faq/_html-template.html", [
+                    {"question": "How do I know if my ductwork needs repair?", "answer": "Signs that your ductwork may need repair include uneven heating or cooling, increased energy bills, and visible dust or debris around vents. A professional inspection can identify issues accurately."},
+                    {"question": "How long does ductwork repair take?", "answer": "The duration of ductwork repair depends on the extent of the damage and the size of your system. Most repairs can be completed within a few hours to a day."},
+                    {"question": "Can ductwork repair improve air quality?", "answer": "Yes, repairing and sealing ductwork can significantly improve indoor air quality by reducing the presence of dust, allergens, and other pollutants in your home."},
+                    {"question": "Is ductwork repair cost-effective?", "answer": "Absolutely. Repairing ductwork can enhance system efficiency, reduce energy costs, and prevent more extensive and costly repairs down the line."},
+                    {"question": "Can you repair ductwork in any type of home?", "answer": "Yes, we can repair ductwork in various types of homes, from single-family houses to multi-story buildings. Our technicians are skilled at addressing the unique needs of different properties."}
+                    ])
+
+                    <script type="application/ld+json">
+                        {
+                          "@context": "https://schema.org",
+                          "@type": "FAQPage",
+                          "mainEntity": [@@loop("html/faq/_jsonld-template.html", [
+                          {"question": "How do I know if my ductwork needs repair?", "answer": "Signs that your ductwork may need repair include uneven heating or cooling, increased energy bills, and visible dust or debris around vents. A professional inspection can identify issues accurately."},
+                          {"question": "How long does ductwork repair take?", "answer": "The duration of ductwork repair depends on the extent of the damage and the size of your system. Most repairs can be completed within a few hours to a day."},
+                          {"question": "Can ductwork repair improve air quality?", "answer": "Yes, repairing and sealing ductwork can significantly improve indoor air quality by reducing the presence of dust, allergens, and other pollutants in your home."},
+                          {"question": "Is ductwork repair cost-effective?", "answer": "Absolutely. Repairing ductwork can enhance system efficiency, reduce energy costs, and prevent more extensive and costly repairs down the line."},
+                          {"question": "Can you repair ductwork in any type of home?", "answer": "Yes, we can repair ductwork in various types of homes, from single-family houses to multi-story buildings. Our technicians are skilled at addressing the unique needs of different properties."}
+                          ])]
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+        @@include('html/reviews.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+</body>
+
+</html>

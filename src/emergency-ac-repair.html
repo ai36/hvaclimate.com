@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Emergency AC Repair in Portland & Vancouver - HVA Climate Control",
+"desc": "Fast, reliable emergency AC repair services in Portland & Vancouver. Get your AC fixed today! - HVA Climate Control",
+"url": "//www.hvaclimate.com/emergency-ac-repair.html",
+"canonical": "https://www.hvaclimate.com/emergency-ac-repair.html",
+"image": "//www.hvaclimate.com/images/emergency-ac-repair.jpg",
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+        @@include('html/firstscreen.html', {
+        "fctitle": "Emergency AC repair services&nbsp;—<br>fast, safe, and effective!",
+        "fcdesc": "Get Immediate Relief<br> with Our Fast <em>Emergency AC Repair</em>",
+        "fcimgpath": "images/emergency-ac-repair",
+        "fcimgalt": "Emergency AC repair technician at work in Portland home - HVA Climate Control",
+        "fcbutton": "Repair AC now",
+        "fccssclass": "fc-emergency-ac-repair",
+        })
+
+        @@include('html/trustedbar.html')
+
+        @@include('html/breadcrumbs3.html', {
+        "title0":"HVA Climate Control",
+        "link0":"//www.hvaclimate.com",
+        "title1":"Air condition",
+        "link1":"//www.hvaclimate.com/air-condition.html",
+        "title2":"Emergency AC repair",
+        "link2":"//www.hvaclimate.com/emergency-ac-repair.html",
+        })
+
+        <div class="full-width full-width-ib">
+            <div class="container">
+                <h2>Expert air conditioning repair service</h2>
+                <div class="infobox">
+                    <nav>
+                        <ul class="ib-menu">
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/air-conditioner-installation.html">Air conditioner installation</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/air-conditioning-repair.html">Air conditioning repair</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/minisplit-installation.html">Minisplit installation</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/air-filter-replacement.html">Air filter replacement</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/air-conditioning-tune-up.html">Air conditioning tune up</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/air-conditioner-froze.html">If the air conditioner is frozen</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/air-handler-repair.html">Air handler repair</a></li>
+                            <li><span class="ibm-item" data-href="//www.hvaclimate.com/emergency-ac-repair.html">Emergency AC repair</span></li>
+                        </ul>
+                    </nav>
+
+                    <div class="ib-info">
+                        <h3>Fast Response When You Need It Most</h3>
+                        <p>
+                            Air conditioning failures can be more than just uncomfortable—they can be emergencies, especially during peak summer heat. Our emergency AC repair services in Portland and Vancouver provide quick, reliable solutions to restore your comfort without delay.
+                        </p>
+                        <h3>Why Choose Our Emergency Service?</h3>
+                        <p>
+                            When your AC stops working, waiting isn't an option. Our dedicated emergency repair team is ready to respond quickly and efficiently, ensuring minimal downtime and discomfort.
+                        </p>
+                        <h3>Our Emergency Repair Process</h3>
+                        <ul>
+                            <li><strong>Immediate Response:</strong> Our technicians are available around the clock to ensure prompt service.</li>
+                            <li><strong>Quick Diagnosis:</strong> We rapidly identify the issue using the latest diagnostic tools.</li>
+                            <li><strong>Efficient Repair:</strong> Our skilled technicians carry common parts to facilitate fast repairs.</li>
+                        </ul>
+
+                        <h3>Prevent Future Emergencies</h3>
+                        <p>
+                            Regular maintenance can prevent many common AC emergencies. We offer comprehensive maintenance plans designed to keep your system running smoothly and avoid unexpected breakdowns.
+                        </p>
+                        <h3>Stay Cool with Reliable Emergency Repairs</h3>
+                        <p>
+                            Don’t suffer in the heat—call us for immediate emergency AC repair. Our team is committed to restoring your air conditioning quickly and effectively.
+                        </p>
+
+                        @@include("html/ctaintext.html", {
+                        "buttontext": "Repair AC now",
+                        })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/howitworks.html')
+
+        <div class="full-width full-width-faq">
+            <div class="container">
+                <div class="faq">
+                    <h2>FAQ and troubleshooting</h2>
+
+                    @@loop("html/faq/_html-template.html", [
+                    { "question": "How quickly can you respond to an emergency?", "answer": "We aim to respond to emergency calls within a few hours. Our goal is to minimize your discomfort and resolve your AC issues swiftly." },
+                    { "question": "What counts as an emergency repair?", "answer": "Any situation where your AC system failure affects your ability to stay safe and comfortable in extreme weather conditions is considered an emergency." },
+                    { "question": "Are emergency repairs more expensive?", "answer": "Emergency services may involve a premium due to the immediate response required. However, we prioritize transparent pricing and will discuss all costs upfront." },
+                    { "question": "Can you repair any AC model?", "answer": "Yes, our technicians are trained to handle all major brands and models of air conditioners, ensuring that we can repair your unit regardless of its make or model." },
+                    { "question": "What can I do to prevent AC emergencies?", "answer": "Regular maintenance is key to preventing emergencies. Scheduling annual check-ups can help catch and fix potential issues before they lead to a breakdown." }
+                    ])
+
+                    <script type="application/ld+json">
+                        {
+                          "@context": "https://schema.org",
+                          "@type": "FAQPage",
+                          "mainEntity": [@@loop("html/faq/_jsonld-template.html", [
+                          { "question": "How quickly can you respond to an emergency?", "answer": "We aim to respond to emergency calls within a few hours. Our goal is to minimize your discomfort and resolve your AC issues swiftly." },
+                          { "question": "What counts as an emergency repair?", "answer": "Any situation where your AC system failure affects your ability to stay safe and comfortable in extreme weather conditions is considered an emergency." },
+                          { "question": "Are emergency repairs more expensive?", "answer": "Emergency services may involve a premium due to the immediate response required. However, we prioritize transparent pricing and will discuss all costs upfront." },
+                          { "question": "Can you repair any AC model?", "answer": "Yes, our technicians are trained to handle all major brands and models of air conditioners, ensuring that we can repair your unit regardless of its make or model." },
+                          { "question": "What can I do to prevent AC emergencies?", "answer": "Regular maintenance is key to preventing emergencies. Scheduling annual check-ups can help catch and fix potential issues before they lead to a breakdown." }
+                                ])]
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        @@include('html/reviews.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+</body>
+
+</html>

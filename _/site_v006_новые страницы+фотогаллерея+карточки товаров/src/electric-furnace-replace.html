@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Electric furnace replacement Vancouver | Portland - HVA Climate Control",
+"desc": "Professional electric furnace replacement in Vancouver & Portland. Improve heating efficiency with a new furnace - HVA Climate Control",
+"url": "//www.hvaclimate.com/electric-furnace-replace.html",
+"canonical": "https://www.hvaclimate.com/electric-furnace-replace.html",
+"image": "//www.hvaclimate.com/images/electric-furnace-replace.jpg",
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+        @@include('html/firstscreen.html', {
+        "fctitle": "Electric furnace replacement&nbsp;—<br>fast, efficient, and professional!",
+        "fcdesc": "Upgrade your home's heating system<br>with our service <em>electric furnace replacement</em>",
+        "fcimgpath": "images/electric-furnace-replace",
+        "fcimgalt": "Technician performing an electric furnace replacement",
+        "fcbutton": "Upgrade Now",
+        "fccssclass": "fc-electric-furnace-replace"
+        })
+
+        @@include('html/trustedbar.html')
+
+        @@include('html/breadcrumbs3.html', {
+        "title0":"HVA Climate Control",
+        "link0":"//www.hvaclimate.com",
+        "title1":"Heating",
+        "link1":"//www.hvaclimate.com/heating.html",
+        "title2":"Electric furnace replacement",
+        "link2":"//www.hvaclimate.com/electric-furnace-replace.html",
+        })
+
+        <div class="full-width full-width-ib">
+            <div class="container">
+                <h2>Professional Electric Furnace Replacement Services</h2>
+                <div class="infobox">
+                    <nav>
+                        <ul class="ib-menu">
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/electric-furnace-installation.html">Electric furnace installation</a></li>
+                            <li><span class="ibm-item" data-href="//www.hvaclimate.com/electric-furnace-replace.html">Electric furnace replacement</span></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/electric-furnace-repair.html">Electric furnace repair</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/electric-furnace-tune-up.html">Electric furnace tune-up</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/electric-furnace-upgrade.html">Electric furnace upgrade</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/electric-furnace-maintenance.html">Electric furnace maintenance</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="ib-info">
+                        <h3>Why Do You Need To Replace Your Electric Furnace?</h3>
+                        <p>Replacing an aging or malfunctioning electric furnace can improve your home's energy efficiency, comfort, and safety. At HVA Climate Control, we offer expert electric furnace replacement services in Portland and Vancouver, ensuring that your new furnace is installed with precision and care.</p>
+                        
+                        <h3>Signs It’s Time to Replace Your Electric Furnace</h3>
+                        <ul>
+                          <li><strong>Old Age:</strong> Furnaces older than 15 years are typically less efficient and may require frequent repairs.</li>
+                          <li><strong>High Energy Bills:</strong> Rising energy costs may indicate your furnace is working harder than it should.</li>
+                          <li><strong>Frequent Breakdowns:</strong> If you're experiencing frequent breakdowns, it may be more cost-effective to replace rather than repair.</li>
+                        </ul>
+                        
+                        <h3>Our Electric Furnace Replacement Process</h3>
+                        <p>We take a detailed approach to furnace replacement, ensuring you get the right system for your needs:</p>
+                        <ul>
+                          <li>Evaluate your current system and recommend the best replacement options.</li>
+                          <li>Install your new furnace with care, ensuring all connections are safe and efficient.</li>
+                          <li>Test the system after installation to confirm optimal performance.</li>
+                        </ul>
+
+                        @@include("html/ctaintext.html", {
+                        "buttontext": "Replace My Furnace",
+                        })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/howitworks.html')
+
+        <div class="full-width full-width-faq">
+            <div class="container">
+                <div class="faq">
+                    <h2>FAQ and troubleshooting</h2>
+
+                    @@loop("html/faq/_html-template.html", [
+                    {"question": "How long does it take to replace an electric furnace?", "answer": "Most electric furnace replacements can be completed within a day. However, complex installations may take longer, depending on the system and home setup."},
+                    {"question": "What are the signs I need to replace my furnace?", "answer": "Common signs include rising energy bills, frequent breakdowns, and your furnace being over 15 years old."},
+                    {"question": "Can I save money by replacing my furnace?", "answer": "Yes, a new, energy-efficient furnace can significantly lower your energy bills and reduce repair costs over time."},
+                    {"question": "Do you offer warranties on furnace replacements?", "answer": "Yes, all new furnace installations come with a manufacturer’s warranty and our workmanship guarantee."},
+                    {"question": "Is a replacement more cost-effective than repair?", "answer": "If your furnace is old or requires frequent repairs, a replacement can be more cost-effective and improve efficiency."}
+                    ])
+
+                    <script type="application/ld+json">
+                        {
+                          "@context": "https://schema.org",
+                          "@type": "FAQPage",
+                          "mainEntity": [@@loop("html/faq/_jsonld-template.html", [
+                          {"question": "How long does it take to replace an electric furnace?", "answer": "Most electric furnace replacements can be completed within a day. However, complex installations may take longer, depending on the system and home setup."},
+                          {"question": "What are the signs I need to replace my furnace?", "answer": "Common signs include rising energy bills, frequent breakdowns, and your furnace being over 15 years old."},
+                          {"question": "Can I save money by replacing my furnace?", "answer": "Yes, a new, energy-efficient furnace can significantly lower your energy bills and reduce repair costs over time."},
+                          {"question": "Do you offer warranties on furnace replacements?", "answer": "Yes, all new furnace installations come with a manufacturer’s warranty and our workmanship guarantee."},
+                          {"question": "Is a replacement more cost-effective than repair?", "answer": "If your furnace is old or requires frequent repairs, a replacement can be more cost-effective and improve efficiency."}
+                          ])]
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        @@include('html/reviews.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+</body>
+
+</html>

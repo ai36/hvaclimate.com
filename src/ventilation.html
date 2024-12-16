@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Expert ventilation services in Portland & Vancouver for cleaner air - HVA Climate Control",
+"desc": "Elevate indoor air quality with our ventilation services in Portland & Vancouver. Breathe cleaner, healthier air today - HVA Climate Control",
+"url": "//www.hvaclimate.com/ventilation.html",
+"canonical": "https://www.hvaclimate.com/ventilation.html",
+"image": "//www.hvaclimate.com/images/ventilation.jpg",
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+        @@include('html/firstscreen-categories.html', {
+        "fctitle": "Ventilation",
+        "fcdesc": "Optimize airflow for healthier<br> living with our <em>ventilation services</em>",
+        "fcimgpath": "images/ventilation",
+        "fcimgalt": "Ventilation ductwork installation expertise - HVA Climate Control",
+        "fcbutton": "Get airflow",
+        "fccssclass": "fc-ventilation",
+        })
+
+        @@include('html/trustedbar.html')
+
+        @@include('html/breadcrumbs2.html', {
+        "title0":"HVA Climate Control",
+        "link0":"//www.hvaclimate.com",
+        "title1":"Ventilation",
+        "link1":"//www.hvaclimate.com/ventilation.html",
+        })
+
+        <div class="full-width full-width-categories">
+            <div class="container">
+                <div class="cats-wrapper">
+                    @@include('html/category-item-with-menu.html', {
+                        "ciimagename":"vent-cleaning-440x440",
+                        "ciimagealt":"Professional vent cleaning service - HVA Climate Control",
+                        "cititle":"Vent cleaning",
+                        "cidesc":"Revitalize your vent's performance with our professional vent cleaning service. Enhance efficiency and safety for your home today",
+                        "cimenu": [
+                            { "cmilink":"vent-cleaning.html", "cmititle":"Vent cleaning" },
+                            { "cmilink":"dryer-vent-cleaning.html", "cmititle":"Dryer vent cleaning" },
+                        ],    
+                    })
+
+                    @@include('html/category-item-without-menu.html', {
+                        "ciimagename":"ductwork-replacement-440x440",
+                        "ciimagealt":"Replacement of ductwork - HVA Climate Control",
+                        "cititle":"Ductwork replacement",
+                        "cidesc":"Upgrade your indoor air quality with our expert ductwork replacement service. Breathe cleaner, fresher air in your home with us",
+                        "cilink":"ductwork-replacement.html",
+                    })
+
+
+                    @@include('html/category-item-without-menu.html', {
+                        "ciimagename": "ductwork-installation-440x440",
+                        "ciimagealt": "Installing new ductwork system - HVA Climate Control",
+                        "cititle": "Ductwork installation",
+                        "cidesc": "Elevate your comfort with our precise ductwork installation service. Experience optimal airflow and temperature control throughout your home",
+                        "cilink": "ductwork-installation.html",
+                    })
+
+                    @@include('html/category-item-without-menu.html', {
+                        "ciimagename": "ductwork-repair-440x440",
+                        "ciimagealt": "Repairing damaged ductwork - HVA Climate Control",
+                        "cititle": "Ductwork repair",
+                        "cidesc": "Restore efficiency and airflow with our reliable ductwork repair service. Ensure your home's comfort and energy savings with our expert solutions",
+                        "cilink": "ductwork-repair.html",
+                    })
+                    
+                    @@include('html/category-item-without-menu.html', {
+                        "ciimagename": "fresh-air-system-installation-440x440",
+                        "ciimagealt": "Installation of fresh air system - HVA Climate Control",
+                        "cititle": "Fresh air system installation",
+                        "cidesc": "Elevate your indoor air quality with our professional fresh air system installation. Breathe cleaner, healthier air for a more comfortable home environment",
+                        "cilink": "fresh-air-system-installation.html",
+                    })
+                    
+                    @@include('html/category-item-without-menu.html', {
+                        "ciimagename": "when-dryer-vent-not-blowing-440x440",
+                        "ciimagealt": "Dryer vent malfunction, not blowing - HVA Climate Control",
+                        "cititle": "When dryer vent not blowing",
+                        "cidesc": "Experiencing a dryer vent not blowing? Trust our experts to diagnose and fix the issue promptly for optimal dryer performance",
+                        "cilink": "when-dryer-vent-not-blowing.html",
+                    })
+                </div>
+            </div>
+        </div>
+
+        @@include('html/ctabar.html', {
+        "title": "Ready to transform ventilation system of your home?",
+        "cta": "Get started with us",
+        })
+
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+</body>
+
+</html>

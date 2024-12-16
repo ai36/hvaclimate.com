@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Commercial HVAC maintenance in Portland & Vancouver",
+"desc": "Professional commercial HVAC maintenance services in Portland & Vancouver. Keep your systems efficient with our expert care",
+"url": "//www.hvaclimate.com/commercial-hvac-maintenance.html",
+"canonical": "https://www.hvaclimate.com/commercial-hvac-maintenance.html",
+"image": "//www.hvaclimate.com/images/commercial-hvac-maintenance.jpg",
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+        @@include('html/firstscreen.html', {
+        "fctitle": "Commercial HVAC maintenance&nbsp;—<br>ensuring efficiency and reliability!",
+        "fcdesc": "Maintain your commercial HVAC systems<br>with our professional <em>maintenance services</em>",
+        "fcimgpath": "images/commercial-hvac-maintenance",
+        "fcimgalt": "Technician performing maintenance on a commercial HVAC system",
+        "fcbutton": "Schedule Maintenance",
+        "fccssclass": "fc-commercial-hvac-maintenance"
+        })
+
+        @@include('html/trustedbar.html')
+
+        @@include('html/breadcrumbs3.html', {
+        "title0":"HVA Climate Control",
+        "link0":"//www.hvaclimate.com",
+        "title1":"Commercial Services",
+        "link1":"//www.hvaclimate.com/commercial.html",
+        "title2":"Commercial HVAC maintenance",
+        "link2":"//www.hvaclimate.com/commercial-hvac-maintenance.html",
+        })
+
+        <div class="full-width full-width-ib">
+            <div class="container">
+                <h2>Expert Commercial HVAC Maintenance Services</h2>
+                <div class="infobox">
+                    <nav>
+                        <ul class="ib-menu">
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/commercial-refrigeration-systems-maintenance.html">Refrigeration</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/pizza-ovens.html">Pizza ovens</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/commercial-ovens.html">Commercial ovens</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/cooktops.html">Cooktops</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/hoods.html">Hoods</a></li>
+                            <li><span class="ibm-item" data-href="//www.hvaclimate.com/commercial-hvac-maintenance.html">Commercial HVAC maintenance</span></li>
+                        </ul>
+                    </nav>
+
+                    <div class="ib-info">
+                        <h3>The Importance of Regular Commercial HVAC Maintenance</h3>
+                        <p>Maintaining your commercial HVAC system is essential for ensuring a comfortable environment for employees and customers alike. Regular maintenance helps prevent unexpected breakdowns, improves energy efficiency, and extends the lifespan of your equipment. At HVA Climate Control, we provide expert commercial HVAC maintenance services in Portland and Vancouver to keep your systems running smoothly.</p>
+
+                        <h3>Our Comprehensive HVAC Maintenance Services</h3>
+                        <p>Our skilled technicians offer a full range of maintenance services tailored to your business needs:</p>
+                        <ul>
+                            <li><strong>System Inspection:</strong> Thorough examination of all HVAC components to identify potential issues.</li>
+                            <li><strong>Cleaning:</strong> Removal of dust and debris from coils, filters, and ducts to improve air quality and efficiency.</li>
+                            <li><strong>Calibration:</strong> Adjustment of thermostats and controls to ensure optimal performance.</li>
+                            <li><strong>Preventive Repairs:</strong> Addressing minor issues before they become major problems.</li>
+                        </ul>
+
+                        <h3>Benefits of Regular HVAC Maintenance</h3>
+                        <p>Investing in regular HVAC maintenance offers numerous advantages for your business:</p>
+                        <ul>
+                            <li><strong>Energy Efficiency:</strong> Well-maintained systems consume less energy, reducing utility costs.</li>
+                            <li><strong>Enhanced Comfort:</strong> Consistent temperature control improves the comfort of your workspace.</li>
+                            <li><strong>Extended Equipment Life:</strong> Regular care prolongs the lifespan of your HVAC system.</li>
+                            <li><strong>Reduced Downtime:</strong> Preventive maintenance minimizes the risk of unexpected breakdowns.</li>
+                        </ul>
+
+                        <p>Contact HVA Climate Control today to schedule your commercial HVAC maintenance service and keep your business environment comfortable and efficient.</p>
+
+                        @@include("html/ctaintext.html", {
+                        "buttontext": "Schedule Maintenance",
+                        })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/howitworks.html')
+
+        <div class="full-width full-width-faq">
+            <div class="container">
+                <div class="faq">
+                    <h2>FAQ and troubleshooting</h2>
+
+                    @@loop("html/faq/_html-template.html", [
+                    {"question": "How often should my commercial HVAC system be maintained?", "answer": "It's recommended to have your commercial HVAC system maintained at least twice a year, typically before the heating and cooling seasons. Regular maintenance ensures optimal performance and reduces the risk of unexpected breakdowns."},
+                    {"question": "What does a commercial HVAC maintenance service include?", "answer": "Our maintenance service includes a comprehensive inspection, cleaning of components, calibration of controls, and preventive repairs to address any potential issues before they escalate."},
+                    {"question": "Can regular maintenance reduce energy costs?", "answer": "Yes, regular maintenance improves your system's efficiency, which can significantly reduce energy consumption and lower your utility bills."},
+                    {"question": "Do you offer customized maintenance plans?", "answer": "Absolutely. We offer tailored maintenance plans to meet the specific needs and schedules of your business, ensuring minimal disruption to your operations."},
+                    {"question": "What are the signs my HVAC system needs maintenance?", "answer": "Common signs include unusual noises, inconsistent temperatures, increased energy bills, and poor air quality. If you notice any of these, it's time to schedule maintenance."}
+                    ])
+
+                    <script type="application/ld+json">
+                        {
+                          "@context": "https://schema.org",
+                          "@type": "FAQPage",
+                          "mainEntity": [@@loop("html/faq/_jsonld-template.html", [
+                          {"question": "How often should my commercial HVAC system be maintained?", "answer": "It's recommended to have your commercial HVAC system maintained at least twice a year, typically before the heating and cooling seasons. Regular maintenance ensures optimal performance and reduces the risk of unexpected breakdowns."},
+                          {"question": "What does a commercial HVAC maintenance service include?", "answer": "Our maintenance service includes a comprehensive inspection, cleaning of components, calibration of controls, and preventive repairs to address any potential issues before they escalate."},
+                          {"question": "Can regular maintenance reduce energy costs?", "answer": "Yes, regular maintenance improves your system's efficiency, which can significantly reduce energy consumption and lower your utility bills."},
+                          {"question": "Do you offer customized maintenance plans?", "answer": "Absolutely. We offer tailored maintenance plans to meet the specific needs and schedules of your business, ensuring minimal disruption to your operations."},
+                          {"question": "What are the signs my HVAC system needs maintenance?", "answer": "Common signs include unusual noises, inconsistent temperatures, increased energy bills, and poor air quality. If you notice any of these, it's time to schedule maintenance."}
+                          ])]
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        @@include('html/reviews.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+</body>
+
+</html>

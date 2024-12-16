@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Cooktops repair and maintenance in Portland | Vancouver - HVA Climate Control",
+"desc": "Expert cooktop repair and maintenance in Portland & Vancouver. Keep your commercial cooktops running efficiently - HVA Climate Control",
+"url": "//www.hvaclimate.com/cooktops-repair-and-maintenance.html",
+"canonical": "https://www.hvaclimate.com/cooktops-repair-and-maintenance.html",
+"image": "//www.hvaclimate.com/images/cooktops-repair-and-maintenance.jpg",
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+        @@include('html/firstscreen.html', {
+        "fctitle": "Cooktops service&nbsp;—<br>keeping kitchen running smoothly!",
+        "fcdesc": "Ensure your cooktops operate efficiently<br>with our <em>cooktop repair services</em>",
+        "fcimgpath": "images/cooktops-repair-and-maintenance",
+        "fcimgalt": "Technician repairing a commercial cooktop",
+        "fcbutton": "Schedule Service",
+        "fccssclass": "fc-cooktops-repair-and-maintenance"
+        })
+
+        @@include('html/trustedbar.html')
+
+        @@include('html/breadcrumbs3.html', {
+        "title0":"HVA Climate Control",
+        "link0":"//www.hvaclimate.com",
+        "title1":"Commercial Services",
+        "link1":"//www.hvaclimate.com/commercial.html",
+        "title2":"Cooktops repair and maintenance",
+        "link2":"//www.hvaclimate.com/cooktops-repair-and-maintenance.html",
+        })
+
+        <div class="full-width full-width-ib">
+            <div class="container">
+                <h2>Professional Cooktop Repair and Maintenance Services</h2>
+                <div class="infobox">
+                    <nav>
+                        <ul class="ib-menu">
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/commercial-refrigeration-systems-maintenance.html">Refrigeration</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/pizza-ovens.html">Pizza ovens</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/commercial-ovens.html">Commercial ovens</a></li>
+                            <li><span class="ibm-item" data-href="//www.hvaclimate.com/cooktops-repair-and-maintenance.html">Cooktops</span></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/hoods.html">Hoods</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/commercial-hvac-maintenance.html">Commercial HVAC maintenance</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="ib-info">
+                        <h3>Why Professional Cooktop Repair and Maintenance is Essential</h3>
+                        <p>In a commercial kitchen, cooktops are vital for daily operations. Regular repair and maintenance ensure your cooktops function efficiently, reducing downtime and preventing costly breakdowns. At HVA Climate Control, we offer expert cooktop repair and maintenance services in Portland and Vancouver to keep your kitchen running smoothly.</p>
+
+                        <h3>Our Comprehensive Cooktop Services</h3>
+                        <p>We provide a full range of services to maintain and repair your commercial cooktops:</p>
+                        <ul>
+                          <li><strong>Diagnosis:</strong> Thorough assessment to identify any issues affecting performance.</li>
+                          <li><strong>Repair:</strong> Prompt repair of faulty components, including burners, igniters, and controls.</li>
+                          <li><strong>Maintenance:</strong> Regular maintenance to prevent future problems and extend equipment life.</li>
+                          <li><strong>Cleaning:</strong> Deep cleaning to remove buildup that can affect efficiency and safety.</li>
+                        </ul>
+
+                        <h3>Benefits of Regular Cooktop Maintenance</h3>
+                        <p>Routine maintenance of your cooktops offers numerous benefits:</p>
+                        <ul>
+                          <li><strong>Improved Efficiency:</strong> Well-maintained cooktops heat up faster and use less energy.</li>
+                          <li><strong>Extended Equipment Life:</strong> Prevent major breakdowns and extend the lifespan of your cooktops.</li>
+                          <li><strong>Safety Compliance:</strong> Reduce the risk of fire hazards and ensure compliance with safety regulations.</li>
+                          <li><strong>Consistent Performance:</strong> Ensure consistent cooking results for better food quality.</li>
+                        </ul>
+
+                        @@include("html/ctaintext.html", {
+                        "buttontext": "Schedule Service",
+                        })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/howitworks.html')
+
+        <div class="full-width full-width-faq">
+            <div class="container">
+                <div class="faq">
+                    <h2>FAQ and troubleshooting</h2>
+
+                    @@loop("html/faq/_html-template.html", [
+                    {"question": "How often should I service my cooktops?", "answer": "It's recommended to service your cooktops at least twice a year to ensure they operate efficiently and safely."},
+                    {"question": "What are common issues with commercial cooktops?", "answer": "Common issues include uneven heating, faulty igniters, gas leaks, and buildup of grease or debris."},
+                    {"question": "Do you offer emergency repair services?", "answer": "Yes, we provide emergency repair services to address urgent issues that may disrupt your business operations."},
+                    {"question": "Can regular maintenance save me money?", "answer": "Absolutely. Regular maintenance can prevent costly repairs, reduce energy consumption, and extend the life of your equipment."},
+                    {"question": "Do you service all types of cooktops?", "answer": "Yes, our technicians are experienced in servicing a wide range of commercial cooktops, including gas, electric, and induction models."}
+                    ])
+
+                    <script type="application/ld+json">
+                        {
+                          "@context": "https://schema.org",
+                          "@type": "FAQPage",
+                          "mainEntity": [@@loop("html/faq/_jsonld-template.html", [
+                          {"question": "How often should I service my cooktops?", "answer": "It's recommended to service your cooktops at least twice a year to ensure they operate efficiently and safely."},
+                          {"question": "What are common issues with commercial cooktops?", "answer": "Common issues include uneven heating, faulty igniters, gas leaks, and buildup of grease or debris."},
+                          {"question": "Do you offer emergency repair services?", "answer": "Yes, we provide emergency repair services to address urgent issues that may disrupt your business operations."},
+                          {"question": "Can regular maintenance save me money?", "answer": "Absolutely. Regular maintenance can prevent costly repairs, reduce energy consumption, and extend the life of your equipment."},
+                          {"question": "Do you service all types of cooktops?", "answer": "Yes, our technicians are experienced in servicing a wide range of commercial cooktops, including gas, electric, and induction models."}
+                          ])]
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        @@include('html/reviews.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+</body>
+
+</html>

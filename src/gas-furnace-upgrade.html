@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Gas furnace upgrade in Portland | Vancouver - HVA Climate Control",
+"desc": "Professional gas furnace upgrade services in Portland & Vancouver. Improve efficiency and comfort with our expert solutions - HVA Climate Control",
+"url": "//www.hvaclimate.com/gas-furnace-upgrade.html",
+"canonical": "https://www.hvaclimate.com/gas-furnace-upgrade.html",
+"image": "//www.hvaclimate.com/images/gas-furnace-upgrade.jpg",
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+        @@include('html/firstscreen.html', {
+        "fctitle": "Gas furnace upgrade&nbsp;—<br>enhance your home's heating efficiency!",
+        "fcdesc": "Upgrade your gas furnace <br>with our <em>upgrade services</em>",
+        "fcimgpath": "images/gas-furnace-upgrade",
+        "fcimgalt": "Technician upgrading a gas furnace",
+        "fcbutton": "Upgrade My Furnace",
+        "fccssclass": "fc-gas-furnace-upgrade"
+        })
+
+        @@include('html/trustedbar.html')
+
+        @@include('html/breadcrumbs3.html', {
+        "title0":"HVA Climate Control",
+        "link0":"//www.hvaclimate.com",
+        "title1":"Heating",
+        "link1":"//www.hvaclimate.com/heating.html",
+        "title2":"Gas furnace upgrade",
+        "link2":"//www.hvaclimate.com/gas-furnace-upgrade.html",
+        })
+
+        <div class="full-width full-width-ib">
+            <div class="container">
+                <h2>Professional Gas Furnace Upgrade Services</h2>
+                <div class="infobox">
+                    <nav>
+                        <ul class="ib-menu">
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-installation.html">Gas furnace installation</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-replace.html">Gas furnace replacement</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-repair.html">Gas furnace repair</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-tune-up.html">Gas furnace tune-up</a></li>
+                            <li><span class="ibm-item" data-href="//www.hvaclimate.com/gas-furnace-upgrade.html">Gas furnace upgrade</span></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/gas-furnace-maintenance.html">Gas furnace maintenance</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/emergency-gas-furnace-repair.html">Emergency gas furnace repair</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="ib-info">
+                        <h3>Why Upgrade Your Gas Furnace?</h3>
+                        <p>Upgrading your gas furnace can significantly improve your home's energy efficiency, reduce heating costs, and enhance indoor comfort. Older furnaces may not operate as efficiently as newer models, leading to higher energy bills and inconsistent heating. At HVA Climate Control, we offer professional gas furnace upgrade services in Portland and Vancouver to help you enjoy a more comfortable and cost-effective home.</p>
+
+                        <h3>Benefits of a Gas Furnace Upgrade</h3>
+                        <p>Upgrading your furnace provides numerous advantages:</p>
+                        <ul>
+                          <li><strong>Increased Efficiency:</strong> Newer models offer higher efficiency ratings, reducing energy consumption.</li>
+                          <li><strong>Cost Savings:</strong> Lower energy bills due to improved efficiency can save you money over time.</li>
+                          <li><strong>Enhanced Comfort:</strong> Experience more consistent and reliable heating throughout your home.</li>
+                          <li><strong>Environmental Impact:</strong> Reduced energy use decreases your carbon footprint.</li>
+                        </ul>
+
+                        <h3>Our Upgrade Process</h3>
+                        <p>Our experienced technicians ensure a seamless upgrade experience:</p>
+                        <ul>
+                          <li>Assess your current furnace and heating needs.</li>
+                          <li>Recommend the best upgrade options for your home.</li>
+                          <li>Provide a detailed, transparent quote.</li>
+                          <li>Expert installation of your new furnace for optimal performance.</li>
+                        </ul>
+
+                        <p>Contact us today to upgrade your gas furnace and enjoy improved efficiency and comfort.</p>
+
+                        @@include("html/ctaintext.html", {
+                        "buttontext": "Upgrade My Furnace",
+                        })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/howitworks.html')
+
+        <div class="full-width full-width-faq">
+            <div class="container">
+                <div class="faq">
+                    <h2>FAQ and troubleshooting</h2>
+
+                    @@loop("html/faq/_html-template.html", [
+                    {"question": "When should I consider upgrading my gas furnace?", "answer": "You should consider upgrading your gas furnace if it's over 15 years old, requires frequent repairs, or your energy bills are increasing. Upgrading to a newer, more efficient model can improve your home's comfort and reduce heating costs."},
+                    {"question": "What are the benefits of upgrading my gas furnace?", "answer": "Upgrading your gas furnace offers several benefits, including increased energy efficiency, lower utility bills, improved indoor air quality, and enhanced comfort. Newer models also come with advanced features and safety enhancements."},
+                    {"question": "How long does a furnace upgrade take?", "answer": "The furnace upgrade process typically takes one to two days, depending on the complexity of the installation. Our technicians work efficiently to minimize disruption to your home and ensure everything is installed correctly."},
+                    {"question": "Can I finance my gas furnace upgrade?", "answer": "Yes, we offer flexible financing options to make your gas furnace upgrade more affordable. Our team can discuss available plans and help you choose the best option to fit your budget."},
+                    {"question": "Will an upgraded furnace increase my home's value?", "answer": "Upgrading to a modern, energy-efficient furnace can increase your home's value by improving its energy efficiency rating and appeal to potential buyers who value lower utility costs and modern heating systems."}
+                    ])
+
+                    <script type="application/ld+json">
+                        {
+                          "@context": "https://schema.org",
+                          "@type": "FAQPage",
+                          "mainEntity": [@@loop("html/faq/_jsonld-template.html", [
+                          {"question": "When should I consider upgrading my gas furnace?", "answer": "You should consider upgrading your gas furnace if it's over 15 years old, requires frequent repairs, or your energy bills are increasing. Upgrading to a newer, more efficient model can improve your home's comfort and reduce heating costs."},
+                          {"question": "What are the benefits of upgrading my gas furnace?", "answer": "Upgrading your gas furnace offers several benefits, including increased energy efficiency, lower utility bills, improved indoor air quality, and enhanced comfort. Newer models also come with advanced features and safety enhancements."},
+                          {"question": "How long does a furnace upgrade take?", "answer": "The furnace upgrade process typically takes one to two days, depending on the complexity of the installation. Our technicians work efficiently to minimize disruption to your home and ensure everything is installed correctly."},
+                          {"question": "Can I finance my gas furnace upgrade?", "answer": "Yes, we offer flexible financing options to make your gas furnace upgrade more affordable. Our team can discuss available plans and help you choose the best option to fit your budget."},
+                          {"question": "Will an upgraded furnace increase my home's value?", "answer": "Upgrading to a modern, energy-efficient furnace can increase your home's value by improving its energy efficiency rating and appeal to potential buyers who value lower utility costs and modern heating systems."}
+                          ])]
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        @@include('html/reviews.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<div class="full-width full-width-bc">
+  <div class="container">
+    <div class="breadcrumb">
+      <a class="bc-link" href="@@link0">@@title0</a>
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+        </svg>
+      </span>
+      <a class="bc-link" href="@@link1">@@title1</a>
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+        </svg>
+      </span>
+      <span>@@title2</span>
+    </div>
+  </div>
+</div>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 0,
+        "item": {
+          "@id": "@@link0",
+          "name": "@@title0"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "@@link1",
+          "name": "@@title1"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@id": "@@link2",
+          "name": "@@title2"
+        }
+      }
+    ]
+  }
+</script>

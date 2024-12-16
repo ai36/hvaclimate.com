@@ -1,0 +1,99 @@
+<div class="amo-wrapper">
+    <div class="amo-wrapper-viewport">
+<!--
+        <script>
+            setTimeout(function () {
+                const amoWV = document.querySelector('.amo-wrapper-viewport');
+
+                const amoScript = document.createElement('script');
+                amoScript.innerHTML = '!function (a, m, o, c, r, m) { a[o + c] = a[o + c] || { setMeta: function (p) { this.params = (this.params || []).concat([p]) } }, a[o + r] = a[o + r] || function (f) { a[o + r].f = (a[o + r].f || []).concat([f]) }, a[o + r]({ id: "1295267", hash: "59a091673fdb2d70bf24759c7e11b874", locale: "en" }), a[o + m] = a[o + m] || function (f, k) { a[o + m].f = (a[o + m].f || []).concat([[f, k]]) } }(window, 0, "amo_forms_", "params", "load", "loaded");';
+                amoWV.appendChild(amoScript);
+
+                const amoScript = document.createElement('script');
+                amoScript.setAttribute('id', 'amoforms_script_1295267');
+                amoScript.setAttribute('async', 'async');
+                amoScript.setAttribute('charset', 'utf-8');
+                amoScript.href = 'https://forms.kommo.com/forms/assets/js/amoforms.js?1710168808';
+                amoWV.appendChild(amoScript);
+
+            }, 5000);
+        </script>
+-->
+
+        <script>!function (a, m, o, c, r, m) { a[o + c] = a[o + c] || { setMeta: function (p) { this.params = (this.params || []).concat([p]) } }, a[o + r] = a[o + r] || function (f) { a[o + r].f = (a[o + r].f || []).concat([f]) }, a[o + r]({ id: "1295267", hash: "59a091673fdb2d70bf24759c7e11b874", locale: "en" }), a[o + m] = a[o + m] || function (f, k) { a[o + m].f = (a[o + m].f || []).concat([[f, k]]) } }(window, 0, "amo_forms_", "params", "load", "loaded");</script>
+        <script id="amoforms_script_1295267" async="async" charset="utf-8" src="https://forms.kommo.com/forms/assets/js/amoforms.js?1710168808"></script>
+
+        <style>
+            /* Необходимо копиривание в основной файл CSS */
+            .amo-wrapper {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(10, 10, 10, .7);
+            }
+
+            .amo-wrapper.active {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                z-index: 10000;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+            }
+
+            .amo-wrapper-viewport {
+                position: relative;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+
+                -webkit-box-flex: 1;
+                -ms-flex: 1 0;
+                flex: 1 0;
+
+                max-width: 500px;
+                min-height: 482px;
+                padding: 20px 40px 0 40px;
+                padding: var(--base-size, 20px) calc(2 * var(--base-size, 20px)) 0 calc(2 * var(--base-size, 20px));
+                background-color: #fff;
+                background-color: var(--bgcolor-regular, #fff);
+                border-radius: 10px;
+                border-radius: calc(.5 * var(--base-size, 20px));
+            }
+
+            .amo-wrapper-viewport::after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 10001;
+
+                height: 48px;
+                border-radius: 10px;
+                border-radius: calc(.5 * var(--base-size, 20px));
+                background-color: #fff;
+                background-color: var(--bgcolor-regular, #fff);
+            }
+
+            #amoforms_iframe_1295267 {
+                height: unset !important;
+            }
+        </style>
+    </div>
+</div>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Electric furnace repair Vancouver | Portland - HVA Climate Control",
+"desc": "Efficient electric furnace repair in Vancouver, WA. Fast, reliable service for optimal heating performance and safety - HVA Climate Control",
+"url": "//www.hvaclimate.com/electric-furnace-repair.html",
+"canonical": "https://www.hvaclimate.com/electric-furnace-repair.html",
+"image": "//www.hvaclimate.com/images/electric-furnace-repair.jpg",
+})
+
+<body>
+    @@include('html/googletag.html')
+
+    @@include('html/header.html')
+
+    <main>
+        @@include('html/firstscreen.html', {
+        "fctitle": "Electric furnace repair&nbsp;—<br>fast, safe, and effective!",
+        "fcdesc": "Bring warmth and comfort back to your home<br>with our expert <em>electric furnace repair</em>",
+        "fcimgpath": "images/electric-furnace-repair",
+        "fcimgalt": "Specialist conducts repair of a electric furnace",
+        "fcbutton": "Get warm",
+        })
+
+        @@include('html/trustedbar.html')
+
+        @@include('html/breadcrumbs3.html', {
+        "title0":"HVA Climate Control",
+        "link0":"//www.hvaclimate.com",
+        "title1":"Heating",
+        "link1":"//www.hvaclimate.com/heating.html",
+        "title2":"Electric furnace repair",
+        "link2":"//www.hvaclimate.com/electric-furnace-repair.html",
+        })
+
+        <div class="full-width full-width-ib">
+            <div class="container">
+                <h2>Expert electric furnace repair services</h2>
+                <div class="infobox">
+                    <nav>
+                        <ul class="ib-menu">
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/electric-furnace-installation.html">Electric furnace installation</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/electric-furnace-replace.html">Electric furnace replace</a></li>
+                            <li><span class="ibm-item" data-href="//www.hvaclimate.com/electric-furnace-repair.html">Electric furnace repair</span></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/electric-furnace-tune-up.html">Electric furnace tune-up</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/electric-furnace-upgrade.html">Electric furnace upgrade</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/electric-furnace-maintenance.html">Electric furnace maintenance</a></li>
+                            <li><a class="ibm-item" href="//www.hvaclimate.com/emergency-electric-furnace-repair.html">Emergency electric furnace repair</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="ib-info">
+                        <h3>Expert Electric Furnace Repair Services</h3>
+                        <p>When your electric furnace stops working, it can leave your home cold and uncomfortable. Fortunately, our experienced technicians in Portland and Vancouver are here to help. We provide prompt, reliable electric furnace repair services to keep your home warm and cozy all winter long.</p>
+                        
+                        <h3>Common Electric Furnace Problems</h3>
+                        <ul>
+                          <li><strong>Not Heating:</strong> If your furnace is not producing heat, it could be due to a faulty heating element or thermostat issues.</li>
+                          <li><strong>Frequent Cycling:</strong> Frequent on and off cycling might indicate a clogged filter or a malfunctioning thermostat.</li>
+                          <li><strong>Blower Issues:</strong> A continuously running blower could signal problems with the limit switch.</li>
+                        </ul>
+                        
+                        <h3>Our Electric Furnace Repair Process</h3>
+                        <p>We start with a comprehensive diagnosis to identify the exact cause of your furnace's issue. Once diagnosed, our technicians will:</p>
+                        <ul>
+                          <li>Explain the problem and discuss the best solutions available.</li>
+                          <li>Proceed with the repairs once we have your approval.</li>
+                          <li>Test the furnace post-repair to ensure it is running efficiently.</li>
+                        </ul>
+
+                        @@include("html/ctaintext.html", {
+                        "buttontext": "Fix My Furnace",
+                        })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/howitworks.html')
+
+        <div class="full-width full-width-faq">
+            <div class="container">
+                <div class="faq">
+                    <h2>FAQ and troubleshooting</h2>
+
+                    @@loop("html/faq/_html-template.html", [
+                    {"question": "How quickly can you repair my furnace?", "answer": "We offer same-day service when available and aim to fix your furnace as quickly as possible, often within the same visit."},
+                    {"question": "What are the signs I need furnace repair?", "answer": "Signs include lack of heat, strange noises, frequent cycling, and higher than usual energy bills."},
+                    {"question": "Do you offer warranties on repairs?", "answer": "Yes, all of our repairs come with a warranty for parts and labor to ensure your peace of mind."},
+                    {"question": "Can I prevent furnace problems?", "answer": "Regular maintenance can help prevent many common furnace problems. We offer service plans that include inspections and tune-ups."},
+                    {"question": "How much will the repair cost?", "answer": "The cost depends on the specific repair needed. We provide upfront pricing after a thorough diagnosis of your furnace."}
+                    ])
+
+                    <script type="application/ld+json">
+                        {
+                          "@context": "https://schema.org",
+                          "@type": "FAQPage",
+                          "mainEntity": [@@loop("html/faq/_jsonld-template.html", [
+                          {"question": "How quickly can you repair my furnace?", "answer": "We offer same-day service when available and aim to fix your furnace as quickly as possible, often within the same visit."},
+                          {"question": "What are the signs I need furnace repair?", "answer": "Signs include lack of heat, strange noises, frequent cycling, and higher than usual energy bills."},
+                          {"question": "Do you offer warranties on repairs?", "answer": "Yes, all of our repairs come with a warranty for parts and labor to ensure your peace of mind."},
+                          {"question": "Can I prevent furnace problems?", "answer": "Regular maintenance can help prevent many common furnace problems. We offer service plans that include inspections and tune-ups."},
+                          {"question": "How much will the repair cost?", "answer": "The cost depends on the specific repair needed. We provide upfront pricing after a thorough diagnosis of your furnace."}
+                          ])]
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        @@include('html/reviews.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+    @@include('html/kommowebform.html')
+
+    @@include('html/end.html')
+
+</body>
+
+</html>

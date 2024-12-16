@@ -1,0 +1,21 @@
+<div class="full-width full-width-fc @@fccssclass">
+    <picture>
+        <source srcset="@@fcimgpath-2.avif" type="image/avif" media="(max-width: 700px)">
+        <source srcset="@@fcimgpath-2.webp" type="image/webp" media="(max-width: 700px)">
+        <source srcset="@@fcimgpath-2.jpg" media="(max-width: 700px)">
+        <source srcset="@@fcimgpath.avif" type="image/avif">
+        <source srcset="@@fcimgpath.webp" type="image/webp">
+        <img width="1536" height="864" class="fc-pic" src="@@fcimgpath.jpg" alt="@@fcimgalt">
+    </picture>
+    <div class="container">
+        <div class="first-screen">
+            <h1>@@fctitle</h1>
+            <p class="fc-desc">
+                @@fcdesc
+            </p>
+            <button class="fc-action" onclick="gtag('event', 'clickRequest', {'button': 'CTAButton'}); document.querySelector('.amo-wrapper').classList.add('active'); event.stopPropagation();">@@fcbutton</button>
+            <span class="fc-separator">or</span>
+            <a class="fc-info" href="#howitworks">How it works?</a>
+        </div>
+    </div>
+</div>

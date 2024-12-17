@@ -1082,6 +1082,14 @@ header {
     --color-grad: #2d1b14;
 }
 
+.fc-emergency-furnace-repair-happy-valley {
+    --color-grad: #130505;
+}
+
+.fc-emergency-furnace-repair-camas {
+    --color-grad: #1a101c;
+}
+
 @media screen and (max-width: 1100px) {
     .fc-minisplit-installation h1 {
         font-size: 240%;

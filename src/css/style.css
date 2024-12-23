@@ -1090,6 +1090,14 @@ header {
     --color-grad: #1a101c;
 }
 
+.fc-emergency-furnace-repair-wilsonville {
+    --color-grad: #51352c;
+}
+
+.fc-emergency-furnace-repair-battle-ground {
+    --color-grad: #1a0809;
+}
+
 @media screen and (max-width: 1100px) {
     .fc-minisplit-installation h1 {
         font-size: 240%;

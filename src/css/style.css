@@ -1098,6 +1098,58 @@ header {
     --color-grad: #1a0809;
 }
 
+.fc-gas-furnace-installation-vancouver {
+    --color-grad: #372d27;
+}
+
+.fc-gas-furnace-installation-gresham {
+    --color-grad: #373737;
+}
+
+.fc-gas-furnace-installation-hillsboro {
+    --color-grad: #1a100d;
+}
+
+.fc-gas-furnace-installation-beaverton {
+    --color-grad: #4d453d;
+}
+
+.fc-gas-furnace-installation-tigard {
+    --color-grad: #19252d;
+}
+
+.fc-gas-furnace-installation-lake-oswego {
+    --color-grad: #424038;
+}
+
+.fc-gas-furnace-installation-oregon-city {
+    --color-grad: #040711;
+}
+
+.fc-gas-furnace-installation-tualatin {
+    --color-grad: #1b2e39;
+}
+
+.fc-gas-furnace-installation-west-linn {
+    --color-grad: #0d041a;
+}
+
+.fc-gas-furnace-installation-happy-valley {
+    --color-grad: #484342;
+}
+
+.fc-gas-furnace-installation-camas {
+    --color-grad: #443d3d;
+}
+
+.fc-gas-furnace-installation-wilsonville {
+    --color-grad: #242424;
+}
+
+.fc-gas-furnace-installation-battle-ground {
+    --color-grad: #372d2d;
+}
+
 @media screen and (max-width: 1100px) {
     .fc-minisplit-installation h1 {
         font-size: 240%;

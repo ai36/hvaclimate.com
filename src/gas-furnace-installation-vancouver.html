@@ -111,13 +111,13 @@
                         {
                           "@context": "https://schema.org",
                           "@type": "FAQPage",
-                          "mainEntity": [
+                          "mainEntity": [@@loop("html/faq/_jsonld-template.html", [
                             {"question": "How do I know if I need a new furnace?", "answer": "Common signs include uneven heating, frequent repairs, and rising energy costs. If your furnace is over 15 years old, it may be time to replace it."},
                             {"question": "What makes modern furnaces more efficient?", "answer": "Modern furnaces use advanced technology, such as variable-speed blowers and high-efficiency heat exchangers, to maximize energy savings and comfort."},
                             {"question": "Do you offer warranties on installations?", "answer": "Yes, we provide both manufacturer warranties and a satisfaction guarantee for our installation services."},
                             {"question": "How long does the installation process take?", "answer": "Typically, a furnace installation takes one day, including the removal of the old unit and setup of the new system."},
                             {"question": "Can I schedule maintenance for my new furnace?", "answer": "Absolutely! Regular maintenance extends the life of your furnace and ensures it operates efficiently. We offer customized maintenance plans to suit your needs."}
-                          ]
+                          ])]
                         }
                     </script>
 

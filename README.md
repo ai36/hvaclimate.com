@@ -8,7 +8,7 @@ HVAC service in Portlant and Vancouver - [https://hvaclimate.com](https://hvacli
 
 ## Build production version
 
-`gulp`
+`npx gulp`
 
 Destination folder: **./dist/**
 

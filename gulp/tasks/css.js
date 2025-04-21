@@ -1,4 +1,5 @@
 import rename from 'gulp-rename';
+import replace from "gulp-replace";
 import cleancss from 'gulp-clean-css';
 import autoprefixer from 'gulp-autoprefixer';
 
@@ -10,6 +11,8 @@ export const css = () => {
         cascade: true
     }))
     .pipe(cleancss())
+    .pipe(replace(/\/\/www\.hvaclimate\.com/g, '//agamalabs.com/sites/hvaclimate.com'))
+    .pipe(replace(/\/images\//g, 'images/'))
     .pipe(rename({
         extname: ".min.css"
     }))

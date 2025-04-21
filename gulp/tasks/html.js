@@ -37,6 +37,8 @@ export const html = () => {
         )
     )
     .pipe(replace('},]', '}]'))
+    .pipe(replace(/\/\/www\.hvaclimate\.com/g, '//agamalabs.com/sites/hvaclimate.com'))
+    .pipe(replace(/\/images\//g, 'images/'))
     .pipe(app.gulp.dest(app.path.build.html))
     .pipe(app.plugins.browsersync.stream())
 }

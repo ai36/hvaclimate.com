@@ -1,17 +1,33 @@
 # HVA Climate Control
 
-HVAC service in Portland and Vancouver - [Live demo](https://agamalabs.com/sites/hvaclimate.com)
+HVAC service in Portland and Vancouver - [Live demo](https://hvaclimate-com.vercel.app)
 
 ## Before running
 
 ```sh
-npm install
+npm i
+```
+
+## Dev mode
+
+```sh
+gulp
+```
+or
+
+```sh
+npx gulp
 ```
 
 ## Build production version
 
 ```sh
-gulp
+gulp build
+```
+or
+
+```sh
+npx gulp build
 ```
 
 Destination folder: **./dist/**

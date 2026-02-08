@@ -11,7 +11,7 @@ export const css = () => {
         cascade: true
     }))
     .pipe(cleancss())
-    .pipe(replace(/\/\/www\.hvaclimate\.com/g, '//agamalabs.com/sites/hvaclimate.com'))
+    .pipe(replace(/\/\/www\.hvaclimate\.com/g, '//hvaclimate.vercel.app'))
     .pipe(replace(/\/images\//g, 'images/'))
     .pipe(rename({
         extname: ".min.css"
